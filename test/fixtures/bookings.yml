@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: bookings
+#
+#  id         :bigint           not null, primary key
+#  site_id    :integer          not null
+#  guest_id   :integer          not null
+#  guest_num  :integer          not null
+#  check_in   :string           not null
+#  check_out  :string           not null
+#  status     :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  site_id: 1
+  guest_id: 1
+  guest_num: 1
+  check_in: MyString
+  check_out: MyString
+  status: MyString
+
+two:
+  site_id: 1
+  guest_id: 1
+  guest_num: 1
+  check_in: MyString
+  check_out: MyString
+  status: MyString
