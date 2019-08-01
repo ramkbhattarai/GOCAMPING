@@ -20,7 +20,27 @@ class User < ApplicationRecord
 
     before_validation :ensure_session_token
     attr_reader :password
- 
+
+   has_many :sites,
+   primary_key: :id,
+   foreign_key: :guest_id,
+   class_name: :Site 
+
+   has_one :site,
+    through: :sites,
+    source: :host 
+
+  has_many :reviews,
+  primary_key: :id,
+  foreign_key: :author_id,
+  class_name: :Review 
+
+  has_many :bookings,
+  primary_key: :id,
+  foreign_key: :guest_id,
+  class_name: :Booking 
+
+
 
     def self.find_by_credentials(email, password)
         @user = User.find_by(email: email)

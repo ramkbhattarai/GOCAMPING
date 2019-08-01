@@ -1,0 +1,1 @@
+json.extract! site, :id, :title, :body, :host_id, :cost, :lat, :log,  :campfire, :wifi, :toilet, :shower_room, :guest_num

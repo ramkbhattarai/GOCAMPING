@@ -16,4 +16,18 @@
 class Booking < ApplicationRecord
     validates :site_id, :guest_id, :guest_num, :check_in, :check_out, :status, presence: true
     
+     has_many :booking_sites,
+    primary_key: :id,
+    foreign_key: :booking_id,
+    class_name: :Site
+
+    belongs_to :site,
+    primary_key: :id,
+    foreign_key: :site_id,
+    class_name: :Site 
+
+    belongs_to :guest,
+    primary_key: :id,
+    foreign_key: :guest_id,
+    class_name: :User 
 end

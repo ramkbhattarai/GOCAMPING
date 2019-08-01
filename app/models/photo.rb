@@ -11,4 +11,9 @@
 
 class Photo < ApplicationRecord
     validates :url, :site_id, presence: true
+
+    belongs_to :site,
+    primary_key: :id,
+    foreign_key: :site_id,
+    class_name: :Site 
 end

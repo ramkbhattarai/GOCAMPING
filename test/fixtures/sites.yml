@@ -9,9 +9,6 @@
 #  cost        :integer          not null
 #  lat         :float            not null
 #  log         :float            not null
-#  check_in    :string           not null
-#  check_out   :string           not null
-#  guest_id    :integer          not null
 #  campfire    :boolean          not null
 #  wifi        :boolean          not null
 #  toilet      :boolean          not null

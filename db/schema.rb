@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_31_235019) do
+ActiveRecord::Schema.define(version: 2019_08_01_214809) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 2019_07_31_235019) do
     t.integer "cost", null: false
     t.float "lat", null: false
     t.float "log", null: false
-    t.integer "guest_id", null: false
     t.boolean "campfire", null: false
     t.boolean "wifi", null: false
     t.boolean "toilet", null: false
@@ -63,9 +62,6 @@ ActiveRecord::Schema.define(version: 2019_07_31_235019) do
     t.integer "guest_num", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "review_id"
-    t.integer "booking_id"
-    t.index ["guest_id"], name: "index_sites_on_guest_id"
     t.index ["host_id"], name: "index_sites_on_host_id"
   end
 

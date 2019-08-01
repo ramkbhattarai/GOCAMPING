@@ -9,7 +9,7 @@ const Greeting = ({ currentUser, demoUser, logout, openModal, login }) => {
                 <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>
                 &nbsp;&nbsp;
         <button className='login-button' onClick={() => openModal('login')}>Log in</button>
-                <button className='demo-user-button' onClick={() => login(demoUser)}>Demo User</button>
+                <button className='demo-user-button' onClick={(e) => {e.preventDefault(); login(demoUser)}}>Demo User</button>
             </div>
         </nav>
     );

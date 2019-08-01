@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Modal from './modal/modal';
 import Index from './index';
 import GreetingContainer from './greeting/greeting_container';
+import SiteListContainer from './sites/sites_lists_container';
 
 
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
      
         <Switch>
             <Route exact path="/" component={Index} />
+            <Route exact path="/sites" component={SiteListContainer}/>
             <Redirect to="/" />
         </Switch>
     </div>

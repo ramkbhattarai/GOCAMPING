@@ -55,19 +55,6 @@
    cursor: pointer;
  }
 
-// @import 'react-datepicker/datepicker.scss';
-// @import 'booking.scss';
-// @import 'errors/errors.scss';
-// @import 'review.scss';
-// @import 'create-review.scss';
-// @import 'edit-review.scss';
-// @import 'index.scss';
-// @import 'listing-index-item.scss';
-// @import 'listing-show.scss';
-// @import 'listing-map-info.scss';
-// @import 'search-bar.scss';
-
-
 body {
   color: #333333;
   font-family: "Lato", Helvetica;
@@ -324,67 +311,4 @@ body {
   top: 5px;
   right: 5px;
   cursor: pointer;
-}
-
-
-.search {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  // margin-left: 17px;
-   @media only screen and (max-width: 1000px) {
-    display: block;
-  }
-
-}
-
-.map {
-  width: 480px;
-  height: 700px;
-  position: fixed;
-  // height: 90%;
-  // position: absolute;
-  float: right;
-  margin-right: 70px;
-  background-color: blue;
-  margin-top: 30px;
-  margin-left: 30px;
-  background-attachment: fixed;
-  @media only screen and (min-width: 1300px) {
-    width: 45%;
-    margin-left: 5%;
-  }
-}
-
-.listing-index {
-  padding-top: 5px;
-  font-weight: 600px;
-  // width: 60%;
-  max-width: 800px;
-  border-top: 3px solid #333333;
-  line-height: 1.1;
-  margin-top: 0;
-  margin-left: 90px;
-  font-family: 'Abel', sans-serif;
-  font-size: 18px;
-  @media only screen and (min-width: 1300px) {
-    width: 50%;
-  }
-
-   @media only screen and (max-width: 1000px) {
-    width: 100%;
-  }
-
-}
-
-.listing-photo {
-  width: 33%;
-  height: 300px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-  font-weight: 400px;
-  margin-right: 15px;
 }
