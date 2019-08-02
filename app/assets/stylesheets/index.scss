@@ -1,5 +1,30 @@
 
 
+.title {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+    color: #000;
+    font-family: "calibre", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    color: green;
+    font-family: "calibre", Arial, Helvetica, sans-serif;
+    margin-bottom: 35px;
+
+   
+    
+}
+
 .splash_subtitle1 {
     font-weight: 700;
     font-size: 2rem;
@@ -9,6 +34,7 @@
     margin-left: 10%;  
     margin-top: 5%; 
 
+   
 }
 
 .splash_subtitle2 {
@@ -19,6 +45,7 @@
     margin-left: 10%; 
     line-height: 1.4;
 
+    
 }
 
 .splash_subtitle3 {
@@ -27,6 +54,7 @@
     text-align: center;
     margin-bottom: 4%;
 
+   
 }
 
 .splash_main {
@@ -40,15 +68,9 @@
     flex-direction: column;
     justify-content: center;
     margin: 0% 15% 8% 15%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -ms-flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+
+   
+    
 }
 
 .splash_section {
@@ -72,6 +94,8 @@
     min-height: 320px;
     height: 320px;
 
+    
+
 
     img {
         display: flex;
@@ -89,10 +113,10 @@
     position: relatve;
     width: 100%;
     height: 25%;
-  
+    border: 1px solid whitesmoke;
     padding: 5%;
     box-sizing: border-box;
-   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 div > h3 {
@@ -100,19 +124,18 @@ div > h3 {
     display: block;
     margin: 0;
     letter-spacing: 1.1px;
-    
+    font-family: "calibre", Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     font-weight: 700;
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 .index_section_subheader {
     text-align: left;
     display: block;
-
+    color: solid whitesmoke;
     font-size: 1em;
     font-weight: 400;
     margin-top: 7px;
@@ -129,6 +152,7 @@ div > h3 {
     width: 75%;
     margin: 0 auto;
 
+   
     
 }
 
@@ -140,14 +164,15 @@ div > h3 {
     margin: auto;
 
     
+    
 }
 
 .splash_section {
     height: 100%;
     width: 100%;
-   
+    border: 1px solid whitesmoke;
     box-sizing: border-box;
-  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     img {
         width: 100%;
@@ -179,5 +204,7 @@ div > h3 {
     text-align: left;
     padding-top: 3%;
     font-size: 1rem;
+    color: solid whitesmoke;
+
    
 }

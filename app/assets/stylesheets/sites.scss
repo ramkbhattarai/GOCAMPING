@@ -1,3 +1,241 @@
 // Place all the styles related to the Sites controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.spot_main_section {
+    display: flex;
+    flex-direction: column;
+
+    
+    
+
+  }
+
+.spot_page {
+    width: 75%;
+    margin-left: 12.5%;
+    display: flex;
+
+    
+}
+
+.spot_div_main {
+    width: 70%;
+
+    
+    
+}
+
+.spot_div {
+    padding: 20px 40px 20px 20px;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.spot_body {
+    font-size: .9rem;
+    line-height: 2;
+    overflow-wrap: break-word;
+    width: 70%;
+    min-width: 250px;
+    margin: 0 auto;
+
+   
+}
+
+.spot_div_info {
+    height: 340px;
+    width: 26%;
+    min-width: 180px;
+    padding: 15px;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0px 0px 3px #ebebeb;
+    border: 1px solid whitesmoke;
+    margin: 2% 1% 1% 1%;
+
+    
+}
+
+.spot_div_details {
+    font-size: .9rem;
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    
+}
+
+.spot_title {
+    font-size: 2.3rem;
+    font-weight: 700;
+
+   
+}
+
+.spot_section_title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.spot_subsection {
+    li {
+        font-size: 16px;
+        
+        img {
+            margin-top: 5px;
+        }
+    }
+}
+
+#spot_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot_detail_header {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 20px 0px 0px;
+
+   
+}
+
+#spot_details_subsection {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 70%;
+
+   
+}
+
+span {
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+}
+
+.spot_index_parent {
+    justify-content: center;
+    width: 28%;
+}
+
+.spot_index_spot {
+    width: 100%;
+    padding-bottom: 35px;
+}
+.spot_index_photo {
+    height: 100%;
+    width: 100%;
+}
+
+.index_photo_title {
+    margin-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.spot_index_header {
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+
+.spot_index_spot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.index_spots {
+    display: flex;
+    flex-wrap: wrap;
+    height: 340px;
+    flex-basis: 320px;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0px 0px 3px #ebebeb;
+    margin: 10px;
+}
+
+.spot_index_spots_img {
+    display: flex;
+}
+
+.delete_spot_button {
+    padding: 0px 10px 0px 10px;
+    border:1px solid whitesmoke;
+    border-radius: 5px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: solid green;
+        font-weight: 600;
+        color: #fff;
+        border: #fff;
+    }
+}
+
+.hosted_container {
+    font-size: 1rem;
+    line-height: 2;
+    padding-right: 20px;
+    width: 30%;
+}
+
+.hosted_by_title {
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.host_name {
+    color: grey;
+    font-weight: 400;
+}
+
+.booked_spots_trips {
+    line-height: 2;
+    border-bottom: 3px solid #ebebeb;
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid green;
+    }
+}
+
+.booked_spots_trips_active {
+    line-height: 2;
+    cursor: pointer;
+    border-bottom: 3px solid green;
+}
+
+.spot_index_empty {
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
