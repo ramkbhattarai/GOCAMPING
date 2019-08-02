@@ -8408,3 +8408,925 @@ Processing by Api::SitesController#show as JSON
 Completed 200 OK in 35ms (Views: 15.2ms | ActiveRecord: 18.1ms)
 
 
+Started GET "/" for ::1 at 2019-08-02 15:39:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 679ms (Views: 670.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 15:39:13 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (16.6ms)
+Completed 200 OK in 67ms (Views: 22.0ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:07:44 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (3.7ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.8ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.8ms)
+  Rendered api/sites/index.json.jbuilder (22.7ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:07:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:07:52 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/index.json.jbuilder (11.7ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:07:55 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.4ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/sites/show.json.jbuilder (7.2ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:14:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 154ms (Views: 150.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:14:35 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (2.8ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/sites/show.json.jbuilder (9.8ms)
+Completed 200 OK in 36ms (Views: 18.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:15:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:15:24 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (10.5ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (9.3ms)
+Completed 200 OK in 33ms (Views: 17.7ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:15:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:15:30 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (15.6ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/sites/show.json.jbuilder (7.2ms)
+Completed 200 OK in 33ms (Views: 12.8ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:16:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "tjBHEteMbhoeeqk8iCdlUg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:16:46 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (1.0ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (12.2ms)
+Completed 200 OK in 24ms (Views: 14.8ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/api/session" for ::1 at 2019-08-02 16:16:53 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"yasu@gmail.com", "fname"=>"yasodha", "lname"=>"bhattarai", "password"=>"[FILTERED]", "zip_code"=>"1234"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yasu@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VDmO3yNgdQsgp3xviIZNlg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:62
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "VDmO3yNgdQsgp3xviIZNlg"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:62
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "yasu@gmail.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:62
+  [1m[36mUser Update (18.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "VDmO3yNgdQsgp3xviIZNlg"], ["updated_at", "2019-08-02 20:16:53.445962"], ["id", 30]]
+  ↳ app/models/user.rb:62
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:62
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.5ms)
+Completed 200 OK in 259ms (Views: 10.0ms | ActiveRecord: 31.8ms)
+
+
+Started DELETE "/api/session" for ::1 at 2019-08-02 16:16:56 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VDmO3yNgdQsgp3xviIZNlg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VR2Vb0EwmUuX7dSSHhh9uw"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:62
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "VR2Vb0EwmUuX7dSSHhh9uw"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:62
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "yasu@gmail.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:62
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "VR2Vb0EwmUuX7dSSHhh9uw"], ["updated_at", "2019-08-02 20:16:56.570742"], ["id", 30]]
+  ↳ app/models/user.rb:62
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:62
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 86ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:19:02 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:19:03 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (8.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:21:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:21:09 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (2.4ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (23.0ms)
+Completed 200 OK in 38ms (Views: 16.9ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:25:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 140ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 16:25:05 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.8ms)
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered api/sites/show.json.jbuilder (21.5ms)
+Completed 200 OK in 34ms (Views: 16.9ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:25:40 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (6.7ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.4ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/_site.json.jbuilder (0.1ms)
+  Rendered api/sites/index.json.jbuilder (20.9ms)
+Completed 200 OK in 31ms (Views: 23.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:25:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 141ms (Views: 136.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:25:59 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (6.2ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (22.6ms)
+Completed 200 OK in 33ms (Views: 26.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:26:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 104ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:26:50 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (33.5ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (51.6ms)
+Completed 200 OK in 63ms (Views: 28.7ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:27:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:27:06 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (30.9ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (50.7ms)
+Completed 200 OK in 64ms (Views: 32.2ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:30:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:30:13 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (3.9ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (24.1ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:30:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:30:34 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.8ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (18.5ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:30:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:30:52 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (6.9ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (21.9ms)
+Completed 200 OK in 32ms (Views: 24.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:34:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 116ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:34:48 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (28.8ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (46.8ms)
+Completed 200 OK in 62ms (Views: 32.2ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:35:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 105ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:35:00 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (26.5ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (1.0ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/index.json.jbuilder (46.7ms)
+Completed 200 OK in 57ms (Views: 29.5ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:35:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:35:22 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.1ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (17.4ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:35:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:35:39 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (3.0ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (27.5ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 16:35:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 16:35:50 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (1.0ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (17.4ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:02:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 540ms (Views: 538.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 17:02:47 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (46.7ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.4ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (64.3ms)
+Completed 200 OK in 74ms (Views: 26.9ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:04:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 17:04:38 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.9ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.4ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (2.0ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.4ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (25.1ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:08:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 558ms (Views: 556.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 17:08:07 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (87.8ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (108.8ms)
+Completed 200 OK in 120ms (Views: 31.8ms | ActiveRecord: 87.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:09:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 17:09:05 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (53.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/index.json.jbuilder (73.2ms)
+Completed 200 OK in 83ms (Views: 28.7ms | ActiveRecord: 53.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:11:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 132ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-02 17:11:37 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.3ms)
+  Rendered api/sites/_site.json.jbuilder (0.2ms)
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  Rendered api/sites/index.json.jbuilder (17.3ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:21:35 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.9ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (2.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (9.5ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:21:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:21:52 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.6ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (7.6ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:23:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:23:53 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (1.1ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (31.2ms)
+Completed 200 OK in 49ms (Views: 33.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:24:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:24:47 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (1.3ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.5ms)
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (21.6ms)
+Completed 200 OK in 34ms (Views: 15.3ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:25:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 115ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:25:39 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (2.4ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/sites/show.json.jbuilder (13.3ms)
+Completed 200 OK in 28ms (Views: 16.6ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:26:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:26:16 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered api/sites/show.json.jbuilder (12.4ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:28:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 120ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:28:13 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (1.2ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered api/sites/show.json.jbuilder (8.9ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:28:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:28:28 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (3.9ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (21.1ms)
+Completed 200 OK in 39ms (Views: 17.5ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:33:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:33:12 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (8.6ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:36:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 138ms (Views: 134.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:36:25 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (0.3ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/sites/show.json.jbuilder (23.2ms)
+Completed 200 OK in 40ms (Views: 26.7ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-02 17:38:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sites/2" for ::1 at 2019-08-02 17:38:05 -0400
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mSite Load (1.0ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  Rendered api/sites/_site.json.jbuilder (0.6ms)
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/api/sites/show.json.jbuilder:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/sites/show.json.jbuilder (16.8ms)
+Completed 200 OK in 33ms (Views: 18.6ms | ActiveRecord: 12.2ms)
+
+

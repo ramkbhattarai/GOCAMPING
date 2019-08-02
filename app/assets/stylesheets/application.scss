@@ -116,18 +116,21 @@ body {
 
 .demo-user-button {
   font-size: 15px;
-  margin-left: 8px;
-  border: 2px solid rgb(64, 217, 172);
+  margin: 8px;
+  border:  solid rgb(64, 217, 172);
   padding: 3px;
+ 
+  
 }
 
 .demo-user-button:hover {
   font-size: 15px;
-  margin-left: 11px;
+  margin: 12px;
   color: white;
-  border: 2px grey;
+  border:  grey;
   background-color: #40d9ac;
   padding: 3px;
+  
 }
 
 
@@ -279,7 +282,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   box-shadow: 0px 0px 5px grey;
-
+  bottom: 70px;
 
 }
 
@@ -311,5 +314,18 @@ body {
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+.session-form-input-login-input{
+  
+    border: 1px solid gray;
+   
+    height: 40px;
+    text-align: left;
+    border-radius: 3px;
+    padding-left: 5px;
+    
+    margin: 5px;
+    width: 85px;
 }
 

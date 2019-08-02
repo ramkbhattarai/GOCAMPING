@@ -36,7 +36,7 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user).then(this.props.closeModal);
+        this.props.processForm(user);
     }
 
     renderErrors() {
@@ -66,21 +66,22 @@ class SessionForm extends React.Component {
                         {this.renderErrors()}
                         <div className="login-form">
                             <br />
-                            <input className="session-form-input login-input"
-                                 type="text"
-                                value={this.state.fname}
-                                onChange={this.update('fname')}
-                                placeholder='First Name...'
+                            <div className="name-inputs">
+                                <input className="session-form-input-login-input"
+                                    type="text"
+                                    value={this.state.fname}
+                                    onChange={this.update('fname')}
+                                    placeholder='First Name...'
 
-                            />
+                                />
 
-                            <br />
-                            <input className="session-form-input login-input" 
-                                type="text"
-                                value={this.state.lname}
-                                onChange={this.update('lname')}
-                                placeholder='Last Name...'
-                            />
+                                <input className="session-form-input-login-input" 
+                                    type="text"
+                                    value={this.state.lname}
+                                    onChange={this.update('lname')}
+                                    placeholder='Last Name...'
+                                />
+                            </div>
 
                             <br />
                             <input className="session-form-input login-input" 
@@ -115,7 +116,7 @@ class SessionForm extends React.Component {
                         <div className='session-options'>
                             {this.props.otherForm}
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+                             <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
                         </div>
 
                     </form>
@@ -163,7 +164,7 @@ class SessionForm extends React.Component {
                             <div className='session-options'>
                                 {this.props.otherForm}
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+                                <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
                             </div>
                         </form>
                     </div>

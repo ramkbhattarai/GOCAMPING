@@ -13,12 +13,8 @@
 class Review < ApplicationRecord
     validates :body, :author_id, :site_id, presence: true
     
-    has_many :reviewed_sites,
-    primary_key: :id,
-    foreign_key: :review_id,
-    class_name: :Site 
 
-    belongs_to :author,
+    belongs_to :review_author,
     primary_key: :id,
     foreign_key: :author_id,
     class_name: :User 

@@ -1,6 +1,9 @@
-class ReviewsController < ApplicationController
+class Api::ReviewsController < ApplicationController
     def index 
-    
+    if params[:site_id]
+      @reviews = Site.find(id: params[:site_id]).reviews
+      render :index
+    end
     end
 
     def create
@@ -30,7 +33,9 @@ class ReviewsController < ApplicationController
     end
 
     def destroy 
-
+         @review = Review.find(params[:id])
+        @review.destroy
+        render :show
     end
 
     def review_params
