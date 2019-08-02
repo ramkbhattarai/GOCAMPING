@@ -1,1 +1,1 @@
-json.extract! site, :id, :title, :body, :host_id, :cost, :lat, :log,  :campfire, :wifi, :toilet, :shower_room, :guest_num
+json.extract! site, :id, :title, :body, :host_id, :cost, :lat, :log,  :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, :spots

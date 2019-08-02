@@ -22,7 +22,7 @@ class Api::UsersController < ApplicationController
         @user = User.find(params[:id])
         render :show
     end
-
+    private
     def user_params
         params.require(:user).permit(:fname, :lname, :email, :password, :zip_code)
     end

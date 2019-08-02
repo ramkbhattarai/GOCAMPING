@@ -1,6 +1,6 @@
 class Api::SitesController < ApplicationController
+   
     def index 
-       
         @sites = Site.all 
         render :index
     end
@@ -19,7 +19,16 @@ class Api::SitesController < ApplicationController
         render :show 
     end
 
-    def site_params
-        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :guest_id, :campfire, :wifi, :toilet, :shower_room, :guest_num, :review_id, :booking_id)
+    def destroy 
+        @site = Site.find(params[:id])
+        @site.destroy 
+        render :show
     end
+
+    private
+    def site_params
+        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting)
+    end
+
+    
 end

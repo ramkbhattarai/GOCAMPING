@@ -16,6 +16,14 @@
 #  guest_num   :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  spots       :integer
+#  tent        :boolean
+#  parking     :boolean
+#  biking      :boolean
+#  pet_allow   :boolean
+#  hiking      :boolean
+#  wildlife    :boolean
+#  rafting     :boolean
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

@@ -1,30 +1,171 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+import { fetchSites } from '../actions/site_actions';
 
 
 class Index extends React.Component {
+    constructor(props) {
+        super(props);
+
+    
+          this.state = {
+              searchParams: ''
+          };  
+       
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    componentDidMount() {
+        this.props.fetchSites();
+    }
+
+  
+
+    handleClick(e) {
+        let site = Object.values(this.props.state.entities.sites)[e]
+        this.props.history.push(`/sites/${site.id}`);
+    }
+
+    update(field){
+        return e => {
+            this.setState(
+                {
+                    [field]: e.target.value
+                }
+            )
+        }
+    }
+   handleSubmit(e){
+       e.preventDefault();
+   }
+
     render() {
+        // const siteSectionDivs = this.props.sites.map(site => {
+        //     return (
+
+        //     )
+        // })
+
         return (
-            <div>
-                <div className="landing-page">
-
-                    <div className='landing-page-top-left'>
-                        <div className='landing-page-title'>Find yourself</div>
-                        <div className='landing-page-second'>outside.</div>
-                        <div className='landing-page-tagline'> Search, discover, and book over <strong>200,000 </strong>campsites around you.</div>
- 
-                        <div className='index-to-sites'><Link to="/sites"><span>or Discover the best camps near you &#8594;</span> </Link></div>
-
+            <>
+                <main className="splash_main">
+                    <div className="splash_subtitle1">
+                        Find yourself outside.
                     </div>
 
-                    <img className="landing-page-image" src={"https://nepalecoadventure.com/wp-content/uploads/2018/03/Everest-Base-Camp-Weather.jpg"} />
-                </div>
+                    <div className="splash_subtitle2">
+                        Book unique camping experiences on over <nobr className="bold">300,000</nobr> campsites, ranches, vineyards, public parks and more.
+                    </div>
 
-                <div className='landing-page-image-caption'><strong>The Everest BaseCamp</strong> hosted by Shrepas in the Mountains</div>
-            </div>
+                    <div className="search_bar_main">
+                        <i className="fas fa-search search_bar_icon"></i>
+                        <form className="search_form" onSubmit={this.handleSubmit}>
+                            <input placeholder="Visit Nepal..." className="search_bar" 
+                             />
+                            <input onClick={() => this.handleSubmit} type="submit" className="search_button" value="Search" />
+                        </form>
+                    </div>
+
+                    <div className="splash_subtitle3">
+                        Discover camping...
+                    </div>
+
+                    <div className="splash_container">
+                        <div className="splash_main_section">
+                            <div className="splash_section" onClick={() => this.handleClick(0)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Camp near by mountains</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(1)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Oh! thy Majestic Mountains</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(2)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Snow capped Mountain Camping</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(3)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Enveloped within the arms of nature</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(4)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Mountain is calling</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(8)}>
+                                <div className="splash_section_img">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+   
+            </>
         )
     }
 }
 
-export default Index;
+const msp = (state) => {
+    return {
+        state
+    }
+}
+
+const mdp = (dispatch) => {
+    return {
+        fetchSites: () => dispatch(fetchSites()),
+        
+    }
+};
+
+export default connect(msp, mdp)(Index);

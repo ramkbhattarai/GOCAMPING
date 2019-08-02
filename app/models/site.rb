@@ -16,11 +16,19 @@
 #  guest_num   :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  spots       :integer
+#  tent        :boolean
+#  parking     :boolean
+#  biking      :boolean
+#  pet_allow   :boolean
+#  hiking      :boolean
+#  wildlife    :boolean
+#  rafting     :boolean
 #
 
 class Site < ApplicationRecord
-    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, presence: true
-    validates :campfire, :wifi, :toilet, :shower_room, inclusion: { in: [true, false] }
+    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, :spots, presence: true
+    validates :campfire, :wifi, :toilet, :shower_room, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, inclusion: { in: [true, false] }
     
     belongs_to :host,
     primary_key: :id,
@@ -43,5 +51,10 @@ class Site < ApplicationRecord
     foreign_key: :site_id,
     class_name: :Booking
 
-    
+    def self.in_bounds(bounds)
+        self.where('lat < ?', bounds[:northEast][:lat])
+            .where('lat < ?', bounds[:southWest][:lat])
+            .where('lat < ?', bounds[:southWest][:log])
+            .where('lat < ?', bounds[:northEast][:log])
+    end
 end

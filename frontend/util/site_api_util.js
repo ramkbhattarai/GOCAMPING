@@ -11,21 +11,53 @@ export const fetchSites = ()=>{
 
 export const fetchSite = (id) => {
     return (
-        {
-            method: 'get',
-            url:`api/sites/${id}`
+       $.ajax(
 
-        }
+           {
+               method: 'get',
+               url:`api/sites/${id}`
+   
+           }
+           )
+           
     )
 }
 
-export const createSite = (site) => {
+export const createSite = (formData) => {
     return (
-        {
-            method: 'get',
-            url: 'api/sites',
-            data: {site}
+       $.ajax(
 
-        }
+           {
+               method: 'post',
+               url: 'api/sites',
+               data: formData,
+               contentType: false,
+               processData: false
+   
+           }
+       ) 
+    )
+}
+
+export const deleteSite =(id) => {
+    return(
+        $.ajax(
+            {
+                method: 'delete',
+                url: `api/sites/${id}`
+            }
+        )
+    )
+}
+
+export const fetchSearchSites = searchParams => {
+    return(
+        $.ajax(
+            {
+                method: 'get',
+                url: 'api/sites',
+                data: {searchParams}
+            }
+        )
     )
 }
