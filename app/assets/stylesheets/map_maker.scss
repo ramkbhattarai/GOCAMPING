@@ -1,0 +1,44 @@
+.infowindow {
+    display: flex;
+    align-content: center;
+}
+
+.infowindow-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#infoWindowDetails {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.infowindow-price {
+    font-size: .8rem;
+}
+
+#infoWindowImage {
+    padding-right: 10px;
+    height: 62px;
+    width: 62px;
+}
+
+#map-container {
+    position: relative;
+    bottom: 0;
+    height: 45vh;
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+  .map {
+  right: 0;
+  bottom: 10px;
+  height: 81vh;
+  width: 45%;
+  position: absolute;
+  height: 73vh;
+}

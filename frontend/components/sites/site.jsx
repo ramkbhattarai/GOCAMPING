@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { withRouter } from 'react-router-dom';
-
+import PhotoSlideShow from './photo_slide_show';
 class Site extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +10,7 @@ class Site extends React.Component {
     }
 
     componentDidMount() {
-        //window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         this.props.fetchSite(this.props.match.params.siteId);
     }
 
@@ -33,8 +33,9 @@ class Site extends React.Component {
 
 
     render() {
-        const { site, host } = this.props;
-    
+        debugger
+        const { site, host, photos } = this.props;
+        
         if (Object.values(site).length === 0) {
             return (
                 null
@@ -44,7 +45,7 @@ class Site extends React.Component {
                 <>
                     <main className="spot_main_section">
                         <div className="photo_slider">
-                            {/* <PhotoSlideshow site={site} /> */}
+                            <PhotoSlideShow photos={photos}/>
                         </div>
 
                         <div className="spot_page">

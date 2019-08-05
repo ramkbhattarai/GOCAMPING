@@ -2,7 +2,7 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 import { fetchSites } from '../actions/site_actions';
-
+import {receiveGeolocation} from '../actions/location_filter_actions';
 
 class Index extends React.Component {
     constructor(props) {
@@ -40,6 +40,8 @@ class Index extends React.Component {
     }
    handleSubmit(e){
        e.preventDefault();
+       this.props.receiveGeolocation(e.target.children[0].value);
+       this.props.history.push('/sites');
    }
 
     render() {
@@ -63,7 +65,8 @@ class Index extends React.Component {
                     <div className="search_bar_main">
                         <i className="fas fa-search search_bar_icon"></i>
                         <form className="search_form" onSubmit={this.handleSubmit}>
-                            <input placeholder="Visit Nepal..." className="search_bar" 
+                            <input placeholder="Visit Nepal..." className="search_bar" onChange={this.update('searchParams')} 
+                            value={this.state['searchParams']}
                              />
                             <input onClick={() => this.handleSubmit} type="submit" className="search_button" value="Search" />
                         </form>
@@ -164,7 +167,7 @@ const msp = (state) => {
 const mdp = (dispatch) => {
     return {
         fetchSites: () => dispatch(fetchSites()),
-        
+        receiveGeolocation: loc => dispatch(receiveGeolocation(loc))
     }
 };
 

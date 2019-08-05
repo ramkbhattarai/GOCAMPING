@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux';
 import modal from './modal_reducer';
-import filtersReducer from './filter_reducers';
-
+import filters from './filters_reducer';
+import geoLocation from './geolocation_reducer';
+import mapBounds from './location_filter_reducer';
 export default combineReducers({
-    modal: modal,
-    filters: filtersReducer
+    modal,
+    filters,
+    geoLocation,
+    mapBounds
 });

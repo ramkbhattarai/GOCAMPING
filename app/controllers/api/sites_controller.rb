@@ -1,7 +1,7 @@
 class Api::SitesController < ApplicationController
    
     def index 
-        @sites = Site.all 
+        @sites = bounds ? Site.in_bounds(bounds) : Site.all 
         render :index
     end
 
@@ -30,5 +30,7 @@ class Api::SitesController < ApplicationController
         params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting)
     end
 
-    
+    def bounds
+        params[:searchParams]
+      end
 end

@@ -50,9 +50,9 @@ export const createSite = site => {
     )
 }
 
-export const  fetchSites = () => {
+export const  fetchSites = (bounds) => {
     return dispatch => {
-        return SiteApiUtil.fetchSites()
+        return SiteApiUtil.fetchSearchSites(bounds)
         .then(sites => {
             return dispatch(receiveSites(sites))
         },errors => {
