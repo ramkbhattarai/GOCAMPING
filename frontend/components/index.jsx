@@ -92,7 +92,7 @@ class Index extends React.Component {
 
                             <div className="splash_section" onClick={() => this.handleClick(1)}>
                                 <div className="splash_section_img">
-                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                    <img src="https://www.gokyotreksnepal.com/wp-content/uploads/2018/09/nepal-camping-trekking.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Oh! thy Majestic Mountains</h3>
@@ -104,7 +104,7 @@ class Index extends React.Component {
 
                             <div className="splash_section" onClick={() => this.handleClick(2)}>
                                 <div className="splash_section_img">
-                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                    <img src="https://www.cityshor.com/uploads/article/12_2014/1417409544_906374_554771084562521_1158281277_o.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Snow capped Mountain Camping</h3>
@@ -116,7 +116,7 @@ class Index extends React.Component {
 
                             <div className="splash_section" onClick={() => this.handleClick(3)}>
                                 <div className="splash_section_img">
-                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                    <img src="http://www.adventurepolygon.com/wp-content/uploads/2018/01/Camping-Near-Rara-Lake-Nepal-Tourist-Places-in-Nepal.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Enveloped within the arms of nature</h3>
@@ -128,7 +128,7 @@ class Index extends React.Component {
 
                             <div className="splash_section" onClick={() => this.handleClick(4)}>
                                 <div className="splash_section_img">
-                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                    <img src="https://nepalecoadventure.com/wp-content/uploads/2015/05/Rara-Lake-Trekking-V.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Mountain is calling</h3>
@@ -140,7 +140,7 @@ class Index extends React.Component {
 
                             <div className="splash_section" onClick={() => this.handleClick(8)}>
                                 <div className="splash_section_img">
-                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg" alt="" />
+                                    <img src="https://www.adventureinyou.com/wp-content/uploads/2014/01/nepal-dolpo-trek-960x640.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Go back to nature</h3>

@@ -4,15 +4,26 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl8TSkkovuXys1EcUJFeDpZVI823ubNRg" ></script>
 
+  <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <title>GoCamping</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <script defer src="https://kit.fontawesome.com/5fe0bb581f.js"></script>
+      
+      
+      
     <% if (logged_in?) %>
       <script type="text/javascript">
         window.currentUser = 
         <%= render("api/users/user.json.jbuilder", user: current_user).html_safe%>
       </script>
       <% end %>
+
+      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+
+      
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

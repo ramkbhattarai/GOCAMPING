@@ -16,10 +16,10 @@ class SiteMap extends Component {
 
     componentDidMount() {
         fetchSites();
-        let mapCenter = { lat: 40.751626, lng: -73.983926 };
+        let mapCenter = { lat: 28.530659, lng: 83.878058 };
         const mapOptions = {
             center: mapCenter,
-            zoom: 11
+            zoom: 7
         };
         let geoLocation = this.props.geoLocation;
         this.map = new google.maps.Map(this.mapNode, mapOptions);
@@ -54,7 +54,7 @@ class SiteMap extends Component {
                     this.map.fitBounds(newBounds);
                     this.props.receiveGeolocation(mapCenter);
                 } else {
-                    return { lat: 40.751626, lng: -73.983926 };
+                    return { lat: 28.530659, lng: 83.878058 };
                 }
             }
         });
@@ -69,7 +69,7 @@ class SiteMap extends Component {
                     let mapCenter = { lat, lng }
                     callBack(mapCenter)
                 } else {
-                    mapCenter = { lat: 40.751626, lng: -73.983926 };
+                    mapCenter = { lat: 28.530659, lng: 83.878058 };
                     callBack(mapCenter)
                 }
             }

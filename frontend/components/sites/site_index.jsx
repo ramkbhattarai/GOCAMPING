@@ -15,18 +15,23 @@ class SiteIndex extends Component {
         
     }
 
-    
-
-     
-
     componentDidMount() {
         window.scrollTo(0, 0);
+        this.props.fetchSites();
     }
 
     render() {
+      
         const { sites, filters } = this.props;
         const filteredSites = applyFilters(filters, sites);
-
+        const siteItems = filteredSites.map((site) => (
+            <SiteIndexItem
+                push={this.props.history.push}
+                site={site}
+                key={site.id}
+                user={this.props.user}
+            />
+        ))
         if (filteredSites.length === 0) {
             return (
                 <div className="spot_index">
@@ -38,18 +43,16 @@ class SiteIndex extends Component {
         } else {
             return (
                 <div className="spot_index">
-                    {filteredSites.map((site) => (
-                        <SiteIndexItem
-                            push={this.props.history.push}
-                            site={site}
-                            key={site.id}
-                            user={this.props.user}
-                        />
-                    ))}
+                    <ul>
+
+                    {siteItems}
+                    </ul>
                 </div>
             )
         }
     }
 }
+
+
 
 export default withRouter(SiteIndex);

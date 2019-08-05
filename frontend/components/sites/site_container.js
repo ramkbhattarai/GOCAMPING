@@ -11,7 +11,7 @@ const msp = (state, ownProps) => {
            site,
            currentUserId: state.session.id, 
            host: state.entities.users[site.host_id] || { fname: "", lname: ""},
-           photos: Object.values(state.entities.photos)
+          
         }
     )
 }

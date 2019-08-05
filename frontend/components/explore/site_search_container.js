@@ -4,11 +4,17 @@ import { fetchSites } from '../../actions/site_actions';
 import { updateFilter, receiveGeolocation } from '../../actions/location_filter_actions';
 import { clearAllFilters } from '../../actions/filter_actions';
 
-const msp = (state) => ({
-    sites: Object.values(state.entities.sites),
-    geoLocation: state.ui.geoLocation["address"],
-    filters: state.ui.filters
-});
+const msp = (state) => {
+   
+    return(
+        {
+
+            sites: Object.values(state.entities.sites),
+            geoLocation: state.ui.geoLocation["address"],
+            filters: state.ui.filters
+        }
+    )
+};
 
 const mdp = (dispatch) => ({
     fetchSites: () => dispatch(fetchSites()),

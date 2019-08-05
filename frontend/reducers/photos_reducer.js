@@ -3,10 +3,11 @@ import merge from 'lodash/merge';
 
 const PhotosReducer = (state = {}, action) => {
     Object.freeze(state);
-    debugger
     switch (action.type) {
+
         case RECEIVE_SITE:
-            return action.site.photos || {};
+           
+            return action.site || {};
         default:
             return state;
     }

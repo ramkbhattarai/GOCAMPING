@@ -14,12 +14,12 @@ export const receiveSites = sites => {
     )
 }
 
-export const receiveSite = (payload) => {
+export const receiveSite = (site) => {
     return (
         {
             type: RECEIVE_SITE,
-            site: payload.site,
-            host: payload.host
+            site
+           
         }
     )
 }

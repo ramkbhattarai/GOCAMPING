@@ -8,14 +8,16 @@ class SiteIndexItem extends Component {
     }
 
     handleClick(e) {
+        
         this.props.push(`/sites/${this.props.site.id}`);
     }
 
     render() {
+       
         const defaultPhoto = ['https://www.welcomenepal.com/uploads/homeslider/far-west-nepal-the-great-himalaya-trails.jpeg'];
 
         if (!this.props.site.photos) {
-            debugger
+            
             this.props.site.photos = defaultPhoto;
         }
             

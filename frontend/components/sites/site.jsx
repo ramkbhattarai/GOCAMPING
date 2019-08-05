@@ -33,10 +33,10 @@ class Site extends React.Component {
 
 
     render() {
-        debugger
-        const { site, host, photos } = this.props;
+       
+        const { site } = this.props;
         
-        if (Object.values(site).length === 0) {
+        if ( Object.values(site).length === 0) {
             return (
                 null
             )
@@ -45,7 +45,7 @@ class Site extends React.Component {
                 <>
                     <main className="spot_main_section">
                         <div className="photo_slider">
-                            <PhotoSlideShow photos={photos}/>
+                            <PhotoSlideShow photos={site.photos}/>
                         </div>
 
                         <div className="spot_page">
@@ -64,7 +64,7 @@ class Site extends React.Component {
                                 <div className="spot_div">
                                     <div className="hosted_container">
                                         <nobr className="hosted_by_title">Hosted By</nobr><br />
-                                        <nobr className="host_name">{host.fname + " " + host.lname[0] + "."}</nobr>
+                                        <nobr className="host_name">{site.host.fname + " " + site.host.lname[0] + "."}</nobr>
                                     </div>
                                     <p className="spot_body">{site.body}</p>
                                 </div>

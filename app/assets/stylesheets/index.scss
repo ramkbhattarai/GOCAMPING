@@ -94,9 +94,6 @@
     min-height: 320px;
     height: 320px;
 
-    
-
-
     img {
         display: flex;
         width: 100%;
@@ -207,4 +204,13 @@ div > h3 {
     color: solid whitesmoke;
 
    
+}
+
+.spot_index{
+    width: 380px;
+    background-color: whitesmoke;
+    background-position: center center;
+    border-radius: 4px,4px,0,0;
+    background-size: cover;
+    box-sizing: border-box;
 }
