@@ -35,7 +35,6 @@ class Site extends React.Component {
     render() {
        
         const { site } = this.props;
-        
         if ( Object.values(site).length === 0) {
             return (
                 null

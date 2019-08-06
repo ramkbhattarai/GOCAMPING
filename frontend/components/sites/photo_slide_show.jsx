@@ -17,7 +17,7 @@ class PhotoSlideShow extends Component {
         
         const settings = {
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             dots: false,
             arrows: true,
             infinite: true,
@@ -36,15 +36,20 @@ class PhotoSlideShow extends Component {
             ]
         };
         
+       let photoUrls = [];
+       photos.forEach(photo => {
+           photoUrls.push(photo.url)
+       })
+
         return (
             <section className="spot_photo">
                 <Slider {...settings}>
                     
                         {
-                        photos.map((photo, id) => {
+                        photoUrls.map((photoUrl, id) => {
                             return (
                                 <div key={id}>
-                                    <img src={photo} alt="" />
+                                    <img src={photoUrl} alt="" />
                                 </div>
                             )
                         })

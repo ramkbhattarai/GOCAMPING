@@ -1,0 +1,487 @@
+.spot_form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 350px;
+    margin: 0 auto;
+
+    @include small {
+        min-width: 320px;
+    }
+}
+
+.spot_form_nav {
+    width: 65%;
+    min-width: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    @include flex-center();
+
+    @include large {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        bottom: 0;
+    }
+}
+
+.form_nav_empty {
+    width: 30%;
+    min-width: 215px;
+    height: 100%;
+    background-color: #fff;
+    margin: 3%;
+
+    @include large {
+        display: none;
+    }
+}
+
+.form_nav_section {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 5%;
+
+    @include large {
+        justify-content: center;
+        height: 100%;
+        width: 100%;   
+        background-color: rgb(249, 249, 249); 
+        margin-right: 0%;
+    }
+}
+
+.arrow_container {
+    display: flex;
+
+    @include large {
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+.fa-angle-left {
+    color: #000;
+}
+
+.fa-angle-right {
+    color: #000;
+}
+
+.left_arrow {
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    background-color: #fff;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(246, 246, 246);
+    padding: 5px 13px;
+
+    @include large {
+        padding: 10px 60px;
+        height: 80%;
+    }
+
+    @include medium {
+        padding: 20px 40px;
+    }
+
+    @include small {
+        height: 80%;
+        padding: 10px 40px;
+    }
+}
+
+.right_arrow {
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(246, 246, 246);
+    padding: 5px 13px;
+
+    @include large {
+        padding: 10px 60px;
+        height: 80%;
+    }
+
+    @include medium {
+        padding: 20px 40px;
+    }
+
+    @include small {
+        height: 80%;
+        padding: 10px 40px;
+    }
+}
+
+.null_arrow {
+    opacity: .3;
+    font-weight: bold;
+    color: rgb(226, 226, 226);
+    background-color: rgb(252, 252, 252);
+    margin-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C0C0C0;
+    padding: 5px 13px;
+
+    @include large {
+        padding: 10px 60px;
+        height: 80%;
+    }
+
+    @include medium {
+        padding: 20px 40px;
+        border-color: #C0C0C0;
+    }
+
+    @include small {
+        height: 80%;
+        padding: 10px 40px;
+    }
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+    min-width: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 5%;
+
+    @include large {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 15%;
+    }
+
+    @include medium {
+        height: 100%;
+    }
+}
+
+.spot_form_main {
+    display: block;
+    width: 50%;
+    background-color: #fff;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    border: $border;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
+
+    @include large {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    @include medium {
+        width: 80%;
+        margin-top: 5%;
+        height: 80%;
+    }
+
+    @include small {
+        width: 90%;
+    }
+}
+
+.host_photo {
+    width: 75px;
+    height: 75px;
+}
+
+.spot_form_message {
+    height: 67%;
+    width: 30%;
+    min-width: 215px;
+    background-color: #fff;
+    margin: 1 % 3% 3% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    border: $border;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
+    padding: 20px;
+    font-size: .9rem;
+
+    @include large {
+        width: 60%;
+        margin: 0;
+    }
+
+    @include medium {
+        display: none;
+    }
+}
+
+.host_message_header {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.host_message_details {
+    margin-left: 20px;
+}
+
+.host_message_name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.host_message p {
+    margin-bottom: 11px;
+}
+
+.host_message_email {
+    font-weight: 600;
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:hover {
+        border-bottom: 1px solid #000;
+    }
+}
+
+.form {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form_title {
+    margin: 0 auto;
+}
+
+.spot_form {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spot_form_input {
+    background-color: #fff;
+    width: 27%;
+    height: 100px;
+}
+
+.spot_form_button {
+    background-color: #fff;
+    width: 27%;
+    height: 100px;
+}
+
+.spot_form_field {
+    width: 40%;
+}
+
+.spot_form_buttons {
+    width: 40%;
+}
+
+.form_group_title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+
+    @include medium {
+        font-size: .9rem;
+    }
+}
+
+.form-control {
+    height: 35px;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    font-weight: 400;
+    letter-spacing: 1.1;
+    font-size: .9rem;
+    color: #000;
+    background-color: #fff;
+
+    &::placeholder {
+        color: gray;
+        font-weight: 500;
+        letter-spacing: 1.1;
+        font-size: .9rem;
+
+        @include large {
+            font-size: .6rem;
+        }
+    }
+
+    @include medium {
+        height: 30px;
+        font-size: .6rem;
+        margin: 5% 0%;
+    }
+}
+
+.form_control_description {
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    margin: 10px 0px 20px 0px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.form_control_description {
+    font-weight: 500;
+    letter-spacing: 1.1;
+    font-size: .9rem;
+    padding: 10px;
+}
+
+textarea {
+     color: #000;
+     font-weight: 500;
+     letter-spacing: 1.1;
+     font-size: .8rem;
+     resize: none
+}
+
+.previous_button {
+    width: 80px;
+    height: 30px;
+    border: 2px solid $primary-color;
+    letter-spacing: 1.1px;
+    font-size: .6rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px;
+    background: $primary-color;
+    color: #fff;
+
+    &:hover {
+        width: 80px;
+        border: 2px solid $primary-color;
+        background-color: #fff;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: .6rem;
+        transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+    }
+
+    @include medium {
+        font-size: 7rem;
+    }
+}
+
+.next_button {
+    width: 80px;
+    height: 30px;
+    border: 2px solid $primary-color;
+    letter-spacing: 1.1px;
+    font-size: .6rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px;
+    background: $primary-color;
+    color: #fff;
+
+    &:hover {
+        width: 80px;
+        border: 2px solid $primary-color;
+        background-color: #fff;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: .6rem;
+        transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+    }
+
+    @include medium {
+        font-size: .7rem;
+    }
+}
+
+.prev_next_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.create_spot_form {
+    display: flex;
+}
+
+#submitPhotoReminder {
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.photo_upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+.photo_upload + label {
+    display: flex;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 10px;
+    -webkit-transition: border 0.4s;
+    transition: border 0.4s;
+    margin-bottom: 5%;
+    font-size: .7rem;
+    align-items: center;
+
+    &:hover {
+        border: 1px solid gray;
+    }
+
+    @include large {
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+        border: $border;
+        border-radius: 2px;
+        padding: 12px;
+        transition: border 0.4s;
+        margin-bottom: 5%;
+        font-size: .9rem;
+    }
+
+    @include medium {
+        padding: 6px;
+    }
+}
+
+.photo_upload_button {
+    span {
+        margin: auto;
+        font-size: .8rem;
+    }
+}
+
+.fa-camera {
+    color: #000;
+    padding-right: 3px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,332 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+ 
+
+ html, body, header, nav, h1, a,
+ ul, li, strong, main, button, i,
+ section, img, div, h2, p, form,
+ fieldset, label, input, textarea,
+ span, article, footer, time, small {
+   margin: 0;
+   padding: 0;
+   // border: 0;
+   // outline: 0;
+   font-family: 'Lato', "Lato", Helvetica;
+   color: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   box-sizing: inherit;
+   background: transparent;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ input,
+ textarea,
+ button {
+   border: none;
+ }
+
+ button,
+ input[type="submit"] {
+   cursor: pointer;
+ }
+
+body {
+  color: #333333;
+  font-family: "Lato", Helvetica;
+}
+
+.login-signup {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 0px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+
+  height: 18px;
+  color: #333333;
+  // border-bottom: 1px solid #ebebeb;
+
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px;
+  margin: auto;
+  margin-right: 0px;
+  height: 18px;
+}
+
+.login-signup-button {
+  margin: auto;
+  margin-right: 0px;
+  text-transform: capitalize;
+  font-size: 15px;
+
+}
+
+.header-name {
+  font-family: 'Lato';
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.header-name:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
+.signup-button {
+  font-size: 15px;
+}
+
+.login-button {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.demo-user-button {
+  font-size: 15px;
+  margin: 5px;
+  border:  solid rgb(64, 217, 172);
+  padding: 1px;
+ 
+  
+}
+
+.demo-user-button:hover {
+  font-size: 15px;
+  margin: 10px;
+  color: white;
+  border:  grey;
+  background-color: #40d9ac;
+  padding: 3px;
+  
+}
+
+
+.header-name-button {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+.signup-button:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
+.login-button:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
+.login-form label {
+  width: 250px;
+  text-align: right;
+}
+
+
+.login-form-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hipcamp-logo {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  width: 135px;
+  letter-spacing: 3px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+
+
+
+.header-button {
+  margin-right: 0px;
+  margin-left: 8px;
+  font-size: 15px;
+  height: 18px;
+
+}
+
+.header-button:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
+.session-welcome-header {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.modal-discover-caption {
+  font-size: 12px;
+  color: gray;
+}
+
+.session-form-input {
+  color: black;
+  margin-top: 5px;
+  border-width: 10px;
+  border: 1px solid gray;
+  border-style: solid;
+  width: 180px;
+  height: 40px;
+  text-align: left;
+  border-radius: 3px;
+  padding-left: 5px;
+  font-family: "Lato", Helvetica;
+  margin-left: 0px;
+
+}
+
+.session-submit {
+  text-transform: capitalize;
+  border: 1px solid gray;
+  font-family: "Lato", Helvetica;
+  margin: 10px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  width: 100%;
+}
+.session-options {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: underline
+
+}
+
+
+.session-question {
+  margin: 10px;
+  font-family: 'Abel', sans-serif;
+  font-size: 12px;
+}
+.session-errors {
+  color: red;
+}
+
+.session-other {
+  border-bottom: 1px solid gray;
+}
+
+.session-demo {
+  border-bottom: 1px solid gray;
+}
+
+
+
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login-form-box {
+  padding: 40px;
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px grey;
+  bottom: 70px;
+
+}
+
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Abel', sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.session-form-input-login-input{
+  
+    border: 1px solid gray;
+   
+    height: 40px;
+    text-align: left;
+    border-radius: 3px;
+    padding-left: 5px;
+    
+    margin: 5px;
+    width: 85px;
+}
+

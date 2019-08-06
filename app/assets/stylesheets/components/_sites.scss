@@ -1,11 +1,14 @@
-// Place all the styles related to the Sites controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .spot_main_section {
     display: flex;
     flex-direction: column;
 
+    @include large {
+        margin-bottom: 200px;
+    }
+
+    @include medium {
+        margin-bottom: 200px;
+    }
   }
 
 .spot_page {
@@ -13,16 +16,28 @@
     margin-left: 12.5%;
     display: flex;
 
+    @include large {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .spot_div_main {
     width: 70%;
 
+    @include large {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include medium {
+        width: 100%;
+    }
 }
 
 .spot_div {
     padding: 20px 40px 20px 20px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: $border;
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +48,7 @@
     justify-content: center;
     margin: 0 auto;
     padding: 10px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: $border;
 }
 
 .spot_body {
@@ -44,6 +59,9 @@
     min-width: 250px;
     margin: 0 auto;
 
+    @include large {
+        min-width: 0px;
+    }
 }
 
 .spot_div_info {
@@ -51,12 +69,18 @@
     width: 26%;
     min-width: 180px;
     padding: 15px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: $border;
     box-shadow: 0px 0px 3px #ebebeb;
-    border: 1px solid rgb(43, 40, 40);
+    border: $border;
     margin: 2% 1% 1% 1%;
 
-    
+    @include large {
+        width: 30%;
+    }
+
+    @include medium {
+        width: 90%;
+    }
 }
 
 .spot_div_details {
@@ -65,14 +89,18 @@
     display: flex;
     justify-content: flex-start;
 
-    
+    @include large {
+        padding: 0px;
+    }
 }
 
 .spot_title {
     font-size: 2.3rem;
     font-weight: 700;
 
-   
+    @include large {
+        font-size: 1.7rem;
+    }
 }
 
 .spot_section_title {
@@ -101,7 +129,9 @@
     font-weight: 600;
     padding: 5px 20px 0px 0px;
 
-   
+    @include large {
+        width: 30%;
+    }
 }
 
 #spot_details_subsection {
@@ -110,7 +140,12 @@
     margin-right: 10px;
     width: 70%;
 
-   
+    @include large {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 70%;
+    }
 }
 
 span {
@@ -166,8 +201,8 @@ span {
     height: 340px;
     flex-basis: 320px;
     justify-content: center;
-    border: 1px solid rgb(54, 52, 52);
-    border-bottom: 1px solid rgb(48, 45, 45);
+    border: $border;
+    border-bottom: $border;
     box-shadow: 0px 0px 3px #ebebeb;
     margin: 10px;
 }
@@ -178,12 +213,12 @@ span {
 
 .delete_spot_button {
     padding: 0px 10px 0px 10px;
-    border:1px solid rgb(59, 56, 56);
+    border: $border;
     border-radius: 5px;
     font-weight: 600;
 
     &:hover {
-        background-color: solid green;
+        background-color: $primary-color;
         font-weight: 600;
         color: #fff;
         border: #fff;
@@ -203,7 +238,7 @@ span {
 }
 
 .host_name {
-    color: grey;
+    color: $font-color;
     font-weight: 400;
 }
 
@@ -213,14 +248,14 @@ span {
 
     &:hover {
         cursor: pointer;
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid $primary-color;
     }
 }
 
 .booked_spots_trips_active {
     line-height: 2;
     cursor: pointer;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid $primary-color;
 }
 
 .spot_index_empty {
@@ -230,49 +265,9 @@ span {
     justify-content: center;
     align-items: center;
 
-    
-}
-
-.photo_slider {
-   position: relative;
-   overflow: hidden;
-}
-  
-.spot_photo {
-   position: relative;
-   margin: 0 auto;
-   width: 90%;
-   background: #fff;
-   height: 400px;
-
-  
-}
-  
-.slider {
-   height: 420px;
-}
-
-.slick-slide {
-   padding: 7px;
-   height: 400px;
-   overflow: hidden;
-
-   img {
-      height: 400px;
-
-      
-   }
-}  
-
-
-
-
-.slick-prev:before, .slick-next:before {
-   color: gray;
-   font-size: 1.4rem;
-   font-family: 'slick';
-}
-
-.slick-prev:hover:before, .slick-next:hover:before {
-   color: green;
+    @include large {
+        & .spot_index {
+            overflow: hidden;
+        }
+    }
 }

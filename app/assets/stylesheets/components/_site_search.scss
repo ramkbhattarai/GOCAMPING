@@ -1,0 +1,301 @@
+.spot_search_container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    min-width: 1024px;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @include large {
+        min-width: 0;
+    }
+
+    @include medium {
+        min-width: 90%;
+    }
+
+    @include small {
+        min-width: 95%;
+    }
+}
+
+.spot_search_main {
+    @include large {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.spot_index {
+    left: 0;
+    top: 13.5%;
+    height: 73vh;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    background-color: #fff;
+    overflow: scroll;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    @include large {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+.spot_index_item {
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 360px;
+
+    @include large {
+        padding: 5px;
+        width: 50%;
+    }
+
+    @include medium {
+        width: 100%;
+    }
+
+    &:nth-child(odd) {
+        padding-right: 10px;
+
+        @include large {
+            padding-right: 5px;
+        }
+    }
+}
+
+.spot_index_item_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.spot_index_photo {
+    width: 100%;
+    height: 60%;
+
+    @include large {
+        height: 70%;
+    }
+}
+
+.spot_details {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+    overflow: auto;
+
+    @include large {
+        height: 30%;
+    }
+}
+
+.map {
+    right: 0;
+    bottom: 10px;
+    height: 81vh;
+    width: 45%;
+    position: absolute;
+    height: 73vh;
+
+    @include large {
+        bottom: 10px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.spot_details_title {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 5px;
+    width: 98%;
+}
+
+.spot_details_body {
+    color: $font-color;
+    padding: 5px;
+    width: 98%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .8rem;
+}
+
+.spot_details_price {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+    padding: 5px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot_details_reviews {
+    color: $font-color;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.infowindow-title {
+    text-align: center;
+}
+
+.infowindow-price {
+    text-align: center;
+}
+
+.spot_filters_header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.spot_filters_container {
+    display: flex;
+    border: $border;
+    width: 100%;
+    background-color: #FDFDFD;
+}
+
+.spot_filter_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50px;
+    margin: 10px 0px 10px 10px;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: #fff;
+    border: $border;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #000;
+    }
+
+    @include large {
+        height: 45px;
+        font-size: .6rem;
+        flex: 1;
+    }
+
+    @include small {
+        margin: 1%;
+    }
+
+    button {
+        padding: 10px;
+        height: 100%;
+
+        @include large {
+            height: 45px;
+            font-size: 1.3em;
+            padding: 5px;
+            width: 100%;
+        }
+
+        @include small {
+            padding: 2px;
+        }
+
+        img {
+            height: 36px;
+            width: 36px;   
+        }
+    }
+}
+
+.spot_filter_section:last-child {
+    margin-right: 10px;
+
+    @include small {
+        margin-right: 1%;
+    }
+}
+
+.spot_filter_item {
+    width: 130px;
+    position: absolute;
+    top: 63px;
+    z-index: 3;
+    padding: 10px;
+    border: $border;
+    background-color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    button {
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 10px;
+        border: $border;
+        margin: 5px 0px 5px 0px;
+        position: relative;
+
+        &:hover {
+            border: 1px solid #000;
+        }
+
+        @include flex-center();
+
+        @include large {
+            height: 45px;
+            font-size: .4em;
+            padding: 5px;
+        }
+
+        @include medium {
+            width: 100%;
+        }
+    
+        img {
+            width: 32px;
+            height: 32px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.active_filter_button {
+    display: block;
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+#map-container {
+    @include large {
+        position: relative;
+        bottom: 0;
+        height: 45vh;
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4%;
+    }
+}
