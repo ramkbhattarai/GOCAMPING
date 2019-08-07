@@ -64,22 +64,14 @@ export const fetchAllBookings = () => {
     }
 }
 
-// export const fectchBooking = (id) => {
-//     return dispatch => {
-//         return BookingApiUtil.fetchBooking(id)
-//         .then(
-//             booking => {
-//                 return dispatch(receiveBooking(booking))
-//             }
-//         )
-//     }
-// }
 
-export const makeBooking = booking =>{
+export const makeBooking = booking => {
     return dispatch => {
         return BookingApiUtil.createBooking(booking)
         .then(
             booking => {
+                debugger
+                alert("Your Booking Is Confirmed")
                 return dispatch(receiveBooking(booking))
             }, errors => {
                

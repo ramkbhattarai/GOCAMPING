@@ -8,8 +8,8 @@ class Booking extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            guest_num: 1,
-            cost: this.props.site.cost
+            num_guests: 1,
+            price: this.props.site.cost
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,7 +18,7 @@ class Booking extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-
+        debugger
         if (!this.props.currentUserId) {
             this.props.openModal('login')
         } else {
@@ -30,10 +30,11 @@ class Booking extends Component {
             const booking = Object.assign({}, this.state);
             booking.guest_id = this.props.currentUserId;
             booking.site_id = this.props.match.params.siteId;
-            booking.guest_num = this.state.guest_num;
+            booking.guest_num = this.state.num_guests;
             booking.cost *= num_days
 
             this.props.makeBooking(booking)
+                .then(() => this.props.history.push(`/users/${this.props.currentUserId}`));
                 
     
         }
@@ -56,9 +57,9 @@ class Booking extends Component {
     handleNumGuests(change) {
         return e => {
             if (change === '+' && (this.state.num_guests + 1 <= this.props.site.guest_num)) {
-                this.setState({ guest_num: (this.state.num_guests += 1) });
+                this.setState({ num_guests: (this.state.num_guests += 1) });
             } else if (change === '-' && (this.state.num_guests - 1 >= 1)) {
-                this.setState({ guest_num: (this.state.num_guests -= 1) });
+                this.setState({ num_guests: (this.state.num_guests -= 1) });
             }
         }
     }
@@ -135,7 +136,7 @@ class Booking extends Component {
                             <div className="booking_error_message">{this.renderErrors()}</div>
 
                             <div className="booking_submit">
-                                <input className="widget_button" type="submit" value="Request to book" />
+                                <input className="widget_button" type="submit" value="Please book here" />
                             </div>
                         </div>
                     </div>

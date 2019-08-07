@@ -21,8 +21,9 @@ class PhotoSlideShow extends Component {
             dots: false,
             arrows: true,
             infinite: true,
-            variableWidth: true,
+            variableWidth: false,
             className: 'slider',
+            adaptiveHeigth: false,
             responsive: [
                 {
                     breakpoint: 700,
