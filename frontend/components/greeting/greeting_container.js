@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { logout, login } from '../../actions/sessions_actions';
 import Greeting from './greeting';
 import { openModal } from '../../actions/modal_actions';
+import {withRouter} from 'react-router';
 
 const msp = ({ session, entities: { users } }) => {
     return {
@@ -28,4 +29,4 @@ const mdp = dispatch => {
     )
 };
 
-export default connect(msp,mdp)(Greeting);
+export default withRouter(connect(msp,mdp)(Greeting));

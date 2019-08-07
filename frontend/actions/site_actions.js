@@ -3,7 +3,7 @@ export const RECEIVE_ALL_SITES = "RECEIVE_ALL_SITES";
 export const RECEIVE_SITE = "RECEIVE_SITE";
 export const CREATE_SITE = "CREATE_SITE";
 export const DESTROY_SITE = "DESTROY_SITE";
-export const RECEIVE_SITES_ERRORS = "RECEIVE_SITES_ERRORS";
+export const RECEIVE_SITE_ERRORS = "RECEIVE_SITE_ERRORS";
 
 export const receiveSites = sites => {
     return(
@@ -27,7 +27,7 @@ export const receiveSite = (site) => {
 export const receiveErrors = errors => {
     return (
         {
-            type: RECEIVE_SITES_ERRORS,
+            type: RECEIVE_SITE_ERRORS,
             errors
         }
     )

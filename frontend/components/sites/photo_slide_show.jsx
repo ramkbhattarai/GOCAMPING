@@ -16,7 +16,7 @@ class PhotoSlideShow extends Component {
         }
         
         const settings = {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             dots: false,
             arrows: true,

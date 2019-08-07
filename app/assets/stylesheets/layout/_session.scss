@@ -73,7 +73,7 @@ body {
 
   height: 18px;
   color: #333333;
-  // border-bottom: 1px solid #ebebeb;
+   border-bottom: 1px solid #ebebeb;
 
 }
 
@@ -116,21 +116,23 @@ body {
 }
 
 .demo-user-button {
+  color:  #40d9ac;
   font-size: 15px;
   margin: 5px;
-  border:  solid rgb(64, 217, 172);
-  padding: 1px;
- 
+  border: 1px solid rgb(64, 217, 172);
+  padding: 3px;
+ transition: .3s;
   
 }
 
 .demo-user-button:hover {
   font-size: 15px;
-  margin: 10px;
+  margin: 5px;
   color: white;
   border:  grey;
   background-color: #40d9ac;
   padding: 3px;
+  border: 1px  solid rgb(64, 217, 172);
   
 }
 

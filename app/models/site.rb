@@ -24,6 +24,7 @@
 #  hiking      :boolean
 #  wildlife    :boolean
 #  rafting     :boolean
+#  image_url   :string
 #
 
 class Site < ApplicationRecord

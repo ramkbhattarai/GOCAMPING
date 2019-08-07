@@ -19,6 +19,8 @@ const Greeting = ({ currentUser, demoUser, logout, openModal, login }) => {
                 <Link to={`/`} className='gocamping-logo'>GOCAMPING</Link>
             </div>
             <div className="header-name-button">
+                <Link className="host_button" to={`/host`}>Host</Link>
+                &nbsp;&nbsp;
                 <Link to={`/user/${currentUser.id}`}><h2 className="header-name">Hi, {`${currentUser.fname}!`}</h2></Link>
                 &nbsp;&nbsp;
         <button className="header-button" onClick={logout}>Log Out</button>

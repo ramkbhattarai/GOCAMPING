@@ -19,7 +19,7 @@ const App = () => (
             <Route exact path="/" component={Index} />
             <Route exact path="/sites/:siteId" component={SiteContainer}/>
             <Route exact path='/sites' component={SiteSearchContainer}/>
-            <ProtectedRoute path="/host" component={SiteFormContainer} />
+            <Route exact path="/host" component={SiteFormContainer} />
             <Redirect to="/" />
         </Switch>
     </div>

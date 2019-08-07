@@ -4,7 +4,7 @@ class Api::BookingsController < ApplicationController
         @bookings = current_user.bookings
         render "api/bookings/index"
       else
-        render json: ["Please login"], status: 404
+        render json: ["Please login"], status: 401
       end
     end
   
@@ -13,7 +13,7 @@ class Api::BookingsController < ApplicationController
       if @booking
         render :show
       else
-        render json: ["Booking not found."], status: 404
+        render json: ["Booking not found."], status: 401
       end
     end
   
@@ -34,7 +34,7 @@ class Api::BookingsController < ApplicationController
 
     private
     def booking_params
-        params.require(:booking).permit(:site_id, :guest_id, :guest_num, :check_in, :check_out, :status)
+        params.require(:booking).permit(:site_id, :guest_id, :guest_num, :check_in, :check_out)
     end
     
 end

@@ -2,9 +2,12 @@ import { connect } from 'react-redux';
 import SiteForm from './site_form';
 import { hostSite } from '../../actions/site_actions';
 
-const msp = (state) => ({
+const msp = (state, {location}) => ({
     state,
-    user: state.entities.users[state.session.id]
+    user: state.entities.users[state.session.id],
+    lat: new URLSearchParams(location.search).get('lat'),
+    lng: new URLSearchParams(location.search).get('lng')
+
 });
 
 const mdp = (dispatch) => {

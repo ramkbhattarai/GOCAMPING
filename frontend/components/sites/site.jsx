@@ -2,6 +2,7 @@ import React from 'react';
 
 import { withRouter } from 'react-router-dom';
 import PhotoSlideShow from './photo_slide_show';
+import BookingContainer from '../bookings/booking_container';
 class Site extends React.Component {
     constructor(props) {
         super(props);
@@ -289,7 +290,7 @@ class Site extends React.Component {
                                 }
                             </div>
 
-                            {/* <BookingContainer siteId={this.props.match.params.siteId} /> */}
+                            <BookingContainer siteId={this.props.match.params.siteId} />
                         </div>
                     </main >
                 </>

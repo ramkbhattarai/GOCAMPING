@@ -1,4 +1,4 @@
-import RECEIVE_SITE_ERRORS from '../actions/site_actions';
+import {RECEIVE_SITE_ERRORS} from '../actions/site_actions';
 
 export default (state = [], action) => {
     Object.freeze(state);
