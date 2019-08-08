@@ -27,7 +27,7 @@ class Api::SitesController < ApplicationController
 
     private
     def site_params
-        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting)
+        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, :image_url)
     end
 
     def bounds

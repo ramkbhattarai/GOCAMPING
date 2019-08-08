@@ -57813,3 +57813,412 @@ Processing by Api::BookingsController#destroy as JSON
 Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 3.3ms)
 
 
+Started GET "/api/sites" for ::1 at 2019-08-08 09:36:37 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.0ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (7.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mPhoto Load (1.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 236]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 237]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 238]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 239]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 240]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 241]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 242]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 243]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 244]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  Rendered api/sites/index.json.jbuilder (52.1ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-08 09:36:39 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.4ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (5.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (3.0ms)
+Started GET "/[object" for ::1 at 2019-08-08 09:36:39 -0400
+  [1m[36mPhoto Load (10.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 236]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 237]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 238]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 239]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (1.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 240]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (3.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 241]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 242]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 243]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (23.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 244]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  Rendered api/sites/index.json.jbuilder (112.5ms)
+Completed 200 OK in 119ms (Views: 74.5ms | ActiveRecord: 44.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/[object"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=30.29831692842061&searchParams%5BnorthEast%5D%5Blog%5D=88.11165670910646&searchParams%5BsouthWest%5D%5Blat%5D=26.73285001764896&searchParams%5BsouthWest%5D%5Blog%5D=79.64445929089356" for ::1 at 2019-08-08 09:36:39 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"30.29831692842061", "log"=>"88.11165670910646"}, "southWest"=>{"lat"=>"26.73285001764896", "log"=>"79.64445929089356"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (10.3ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '30.29831692842061') AND (lat < '26.73285001764896') AND (lat < '79.64445929089356') AND (lat < '88.11165670910646')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (11.6ms)
+Completed 200 OK in 77ms (Views: 65.7ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=30.29831692842061&searchParams%5BnorthEast%5D%5Blog%5D=88.12144140759278&searchParams%5BsouthWest%5D%5Blat%5D=26.73285001764896&searchParams%5BsouthWest%5D%5Blog%5D=79.63467459240724" for ::1 at 2019-08-08 09:36:45 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"30.29831692842061", "log"=>"88.12144140759278"}, "southWest"=>{"lat"=>"26.73285001764896", "log"=>"79.63467459240724"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (21.4ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '30.29831692842061') AND (lat < '26.73285001764896') AND (lat < '79.63467459240724') AND (lat < '88.12144140759278')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (25.8ms)
+Completed 200 OK in 43ms (Views: 20.9ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=30.29831692842061&searchParams%5BnorthEast%5D%5Blog%5D=88.33679060498048&searchParams%5BsouthWest%5D%5Blat%5D=26.73285001764896&searchParams%5BsouthWest%5D%5Blog%5D=79.41932539501954" for ::1 at 2019-08-08 09:36:45 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"30.29831692842061", "log"=>"88.33679060498048"}, "southWest"=>{"lat"=>"26.73285001764896", "log"=>"79.41932539501954"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.1ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '30.29831692842061') AND (lat < '26.73285001764896') AND (lat < '79.41932539501954') AND (lat < '88.33679060498048')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (3.3ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=30.29831692842061&searchParams%5BnorthEast%5D%5Blog%5D=88.85065893688966&searchParams%5BsouthWest%5D%5Blat%5D=26.73285001764896&searchParams%5BsouthWest%5D%5Blog%5D=78.90545706311036" for ::1 at 2019-08-08 09:36:45 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"30.29831692842061", "log"=>"88.85065893688966"}, "southWest"=>{"lat"=>"26.73285001764896", "log"=>"78.90545706311036"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.7ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '30.29831692842061') AND (lat < '26.73285001764896') AND (lat < '78.90545706311036') AND (lat < '88.85065893688966')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (2.0ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=31.38255030498498&searchParams%5BnorthEast%5D%5Blog%5D=86.43195013562013&searchParams%5BsouthWest%5D%5Blat%5D=25.599466278788658&searchParams%5BsouthWest%5D%5Blog%5D=81.32416586437989" for ::1 at 2019-08-08 09:36:45 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"31.38255030498498", "log"=>"86.43195013562013"}, "southWest"=>{"lat"=>"25.599466278788658", "log"=>"81.32416586437989"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '31.38255030498498') AND (lat < '25.599466278788658') AND (lat < '81.32416586437989') AND (lat < '86.43195013562013')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (4.6ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=31.38255030498498&searchParams%5BnorthEast%5D%5Blog%5D=86.4921174482422&searchParams%5BsouthWest%5D%5Blat%5D=25.599466278788658&searchParams%5BsouthWest%5D%5Blog%5D=81.26399855175782" for ::1 at 2019-08-08 09:36:45 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"31.38255030498498", "log"=>"86.4921174482422"}, "southWest"=>{"lat"=>"25.599466278788658", "log"=>"81.26399855175782"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (2.3ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '31.38255030498498') AND (lat < '25.599466278788658') AND (lat < '81.26399855175782') AND (lat < '86.4921174482422')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (3.5ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=31.38255030498498&searchParams%5BnorthEast%5D%5Blog%5D=87.08160261669923&searchParams%5BsouthWest%5D%5Blat%5D=25.599466278788658&searchParams%5BsouthWest%5D%5Blog%5D=80.67451338330079" for ::1 at 2019-08-08 09:36:48 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"31.38255030498498", "log"=>"87.08160261669923"}, "southWest"=>{"lat"=>"25.599466278788658", "log"=>"80.67451338330079"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.4ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '31.38255030498498') AND (lat < '25.599466278788658') AND (lat < '80.67451338330079') AND (lat < '87.08160261669923')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (1.5ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-08 09:36:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "SYwDqtf1roJZiBIxqR-M2Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/sites" for ::1 at 2019-08-08 09:36:52 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (20.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.3ms)
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (3.6ms)
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 236]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 237]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 238]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 239]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 240]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 241]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 242]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 243]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 244]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  Rendered api/sites/index.json.jbuilder (80.8ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/sites?searchParams%5BnorthEast%5D%5Blat%5D=31.38255030498498&searchParams%5BnorthEast%5D%5Blog%5D=87.08160261669923&searchParams%5BsouthWest%5D%5Blat%5D=25.599466278788658&searchParams%5BsouthWest%5D%5Blog%5D=80.67451338330079" for ::1 at 2019-08-08 09:36:52 -0400
+Processing by Api::SitesController#index as JSON
+  Parameters: {"searchParams"=>{"northEast"=>{"lat"=>"31.38255030498498", "log"=>"87.08160261669923"}, "southWest"=>{"lat"=>"25.599466278788658", "log"=>"80.67451338330079"}}}
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (0.6ms)[0m  [1m[34mSELECT "sites".* FROM "sites" WHERE (lat < '31.38255030498498') AND (lat < '25.599466278788658') AND (lat < '80.67451338330079') AND (lat < '87.08160261669923')[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  Rendered api/sites/index.json.jbuilder (2.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/[object" for ::1 at 2019-08-08 09:36:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/[object"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/sites" for ::1 at 2019-08-08 09:49:14 -0400
+Processing by Api::SitesController#index as JSON
+  Rendering api/sites/index.json.jbuilder
+  [1m[36mSite Load (1.1ms)[0m  [1m[34mSELECT "sites".* FROM "sites"[0m
+  ↳ app/views/api/sites/index.json.jbuilder:1
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (0.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (1.2ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 236]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 237]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 238]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 239]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 240]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 241]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 242]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 243]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 244]]
+  ↳ app/views/api/sites/index.json.jbuilder:6
+  Rendered api/sites/index.json.jbuilder (45.3ms)
+Completed 200 OK in 54ms (Views: 48.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/sites/236/reviews" for ::1 at 2019-08-08 09:49:15 -0400
+Processing by Api::ReviewsController#index as JSON
+  Parameters: {"site_id"=>"236"}
+Started GET "/api/sites/236" for ::1 at 2019-08-08 09:49:15 -0400
+  [1m[36mSite Load (0.5ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/reviews_controller.rb:4
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Site with 'id'={:id=>"236"}:
+  app/controllers/api/reviews_controller.rb:4:in `index'
+
+Processing by Api::SitesController#show as JSON
+  Parameters: {"id"=>"236"}
+  [1m[36mSite Load (2.6ms)[0m  [1m[34mSELECT  "sites".* FROM "sites" WHERE "sites"."id" = $1 LIMIT $2[0m  [["id", 236], ["LIMIT", 1]]
+  ↳ app/controllers/api/sites_controller.rb:18
+  Rendering api/sites/show.json.jbuilder
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/views/api/sites/_site.json.jbuilder:1
+  Rendered api/sites/_site.json.jbuilder (3.0ms)
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."site_id" = $1[0m  [["site_id", 236]]
+  ↳ app/views/api/sites/show.json.jbuilder:11
+  Rendered api/sites/show.json.jbuilder (10.0ms)
+Completed 200 OK in 23ms (Views: 15.5ms | ActiveRecord: 4.6ms)
+
+
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5063078986692347880)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5063078986692347880)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9

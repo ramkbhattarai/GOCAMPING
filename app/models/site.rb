@@ -28,7 +28,7 @@
 #
 
 class Site < ApplicationRecord
-    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, :spots, presence: true
+    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, :spots, :image_url, presence: true
     validates :campfire, :wifi, :toilet, :shower_room, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, inclusion: { in: [true, false] }
     
     belongs_to :host,
