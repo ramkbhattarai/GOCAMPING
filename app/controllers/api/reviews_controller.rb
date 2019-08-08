@@ -8,7 +8,7 @@ class Api::ReviewsController < ApplicationController
 
     def create
         @review = Review.new(review_params)
-        @review.author = current_user
+        @review.author_id = current_user.id
         @review.site_id = params[:site_id]
         if @review.save 
             render :show 

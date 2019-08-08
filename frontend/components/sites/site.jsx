@@ -3,6 +3,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import PhotoSlideShow from './photo_slide_show';
 import BookingContainer from '../bookings/booking_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 class Site extends React.Component {
     constructor(props) {
         super(props);
@@ -278,13 +279,13 @@ class Site extends React.Component {
                                     <>
                                         <div className='spot_review_container'>
                                             <div className='review_header'>
-                                                <p className="review_title">(fornow no)  Written reviews</p>
-                                                <button onClick={this.handleClick} className="review_submit_button">Submit Review</button>
+                                                <p className="review_title">{this.props.numReviews} Reviews</p>
+                                                <button onClick={this.handleClick} className="review_submit_button">Create Review</button>
                                             </div>
                                         </div>
 
                                         <div>
-                                            {/* <ReviewIndexContainer siteId={this.props.match.params.siteId} /> */}
+                                            <ReviewIndexContainer siteId={this.props.match.params.siteId} />
                                         </div>
                                     </>
                                 }

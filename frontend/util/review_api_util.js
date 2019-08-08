@@ -9,12 +9,12 @@ export const fetchReviews = (siteId) => {
     )
 }
 
-export const fetchReview =(id) => {
+export const fetchReview = (reviewId) => {
     return(
         $.ajax(
             {
                 method: 'get',
-                url: `api/reviews/${id}`
+                url: `api/reviews/${reviewId}`
             }
         )
     )
@@ -44,12 +44,12 @@ export const updateReview = (review, siteId) => {
     )
 }
 
-export const deleteReveiw =(id) =>{
+export const deleteReveiw =(reviewId) =>{
     return(
         $.ajax(
             {
                 method: 'destroy',
-                url: `api/reviews/${id}`
+                url: `api/reviews/${reviewId}`
             }
         )
     )

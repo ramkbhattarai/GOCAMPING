@@ -1,3 +1,209 @@
 // Place all the styles related to the Reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.spot_review_container {
+    display: flex;
+    padding: 20px 0px 0px 20px;
+}
+
+.review_header {
+    display: flex;
+    width: 100%;
+}
+
+.create_review_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include large {
+        margin-top: 10%;
+    }
+
+    @include medium {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.review_form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    @include large {
+        width: 80%;
+        margin-top: 3%;
+    }
+
+    @include medium {
+        width: 100%;
+    }
+}
+
+.review_spot_title {
+    font-weight: 700;
+    font-size: 2rem;
+
+    @include medium {
+        margin-top: 5%;
+    }
+}
+
+.review_description {
+    padding: 10px;
+    color: #000;
+    border-radius: 1px;
+    resize: none;
+    line-height: 1.9;
+    margin-top: 5%;
+
+    @include large {
+        margin: 0;
+    }
+
+    @include medium {
+        margin-top: 3%;
+    }
+
+    &:placeholder-shown {
+        padding: 10px;
+    }
+}
+
+.create_review_submit {
+    border: 3px solid $primary-color;
+    height: 50px;
+    width: 100%;
+    background: $primary-color;
+    color: #fff;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 0 auto;
+    margin-top: 5%;
+
+    &:hover {
+        border: 3px solid $primary-color;
+        background-color: #fff;
+        color: $primary-color;
+        padding: 0.5rem;
+        transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+        margin: 0 auto;
+        margin-top: 5%;
+
+        @include large {
+            margin-top: 3%;
+        }
+    
+        @include medium {
+            margin-top: 5%;
+        }
+    }
+
+    @include large {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    @include medium {
+        margin-top: 5%;
+    }
+}
+
+.review_title {
+    width: 70%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.review_submit_button {
+    text-align: right;
+    border: 3px solid $primary-color;
+    height: 30px;
+    width: 140px;
+    min-width: 140px;
+    background: $primary-color;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: 3px solid $primary-color;
+        background-color: #fff;
+        color: $primary-color;
+        transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.reviews_container {
+    padding: 20px;
+}
+
+.review-index-item {
+    padding: 20px;
+    border-bottom: $border;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.review-item-values {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review-user-name {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.delete-edit-review {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.delete-review-button {
+    text-align: end;
+    width: 55px;
+    height: 100%;
+    margin-left: 10px;
+    font-weight: 400;
+    color: $font-color;
+    font-size: 14px;
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+.review_name {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.review_date {
+    font-weight: 400;
+    color: $font-color;
+    font-size: 14px;
+}

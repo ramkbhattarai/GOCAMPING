@@ -16,6 +16,10 @@ class Booking extends Component {
         this.handleDateChange = this.handleDateChange.bind(this);
     }
 
+    componentWillMount(){
+        this.props.clearErrors();
+    }
+
     handleSubmit(e) {
         e.preventDefault();
        
@@ -33,9 +37,15 @@ class Booking extends Component {
             booking.guest_num = this.state.num_guests;
             booking.price *= num_days
 
+            this.props.clearErrors();
+
             this.props.makeBooking(booking)
-                .then(() => this.props.fetchAllBookings())
-                .then(() => this.props.history.push(`/users/${this.props.currentUserId}`));
+                .then(() => {
+                    if (!this.props.errors.length){
+                        this.props.fetchAllBookings()
+                        .then(() => this.props.history.push(`/users/${this.props.currentUserId}`));
+                    }
+                })
                 
          
         }
@@ -71,7 +81,7 @@ class Booking extends Component {
             <ul className="booking-errors">
                 {this.props.errors.map((error, idx) => (
                     <li key={`error-${idx}`} className="bookings_error">
-                        &#10060; {error}.
+                         {error}
                     </li>
                 ))}
             </ul>

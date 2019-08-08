@@ -138,9 +138,45 @@ class Index extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="splash_section" onClick={() => this.handleClick(8)}>
+                            <div className="splash_section" onClick={() => this.handleClick(5)}>
                                 <div className="splash_section_img">
                                     <img src="https://www.adventureinyou.com/wp-content/uploads/2014/01/nepal-dolpo-trek-960x640.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(6)}>
+                                <div className="splash_section_img">
+                                    <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/004606ca2b44e3d7402c87b99e62bcd91f960fb7/big-b5abb9baa0f7f4a0884170b2caaf483e.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(7)}>
+                                <div className="splash_section_img">
+                                    <img src="https://trekroute.com/wp-content/uploads/2014/12/Ghandruk-Short-easy-trek-nepal.jpg" alt="" />
+                                </div>
+                                <div className="splash_section_details">
+                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <div className="splash_section_location">
+                                        Nepal
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="splash_section" onClick={() => this.handleClick(8)}>
+                                <div className="splash_section_img">
+                                    <img src="http://www.excitingnepalholidays.com/images/panchase-trek.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
                                     <h3 className="splash_section_name">Go back to nature</h3>

@@ -33,12 +33,12 @@ export const createBooking = booking => {
     )
 }
 
-export const removeBooking = booking => {
+export const removeBooking = bookingId => {
     
     return(
         {
             type: REMOVE_BOOKING,   
-            bookingId: booking.id
+            bookingId: bookingId
         }
     )
 }

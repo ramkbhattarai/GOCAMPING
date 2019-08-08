@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {fetchAllBookings, makeBooking, deleteBooking} from '../../actions/booking_actions';
+import { fetchAllBookings, makeBooking, deleteBooking, receiveBookingErrors} from '../../actions/booking_actions';
 import {fetchSite} from '../../actions/site_actions';
 import {openModal} from '../../actions/modal_actions';
 import Booking from './booking';
@@ -25,7 +25,8 @@ const mdp = dispatch => {
             deleteBooking: id => dispatch(deleteBooking(id)),
             openModal: modalType => dispatch(openModal(modalType)),
             fetchSite: id => dispatch(fetchSite(id)),
-            fetchAllBookings: () => dispatch(fetchAllBookings())
+            fetchAllBookings: () => dispatch(fetchAllBookings()),
+            clearErrors: () => dispatch(receiveBookingErrors([]))
         }
     )
 }
