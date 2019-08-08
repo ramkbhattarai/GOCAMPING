@@ -69,7 +69,7 @@ site1 = Site.create!(
     "wildlife": true,
     "rafting": true,
     "wifi": true,
-    "image_url":"https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg"
+    "image_url": "https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg"
 )
 site2 = Site.create!(
     "host_id": user1.id,
