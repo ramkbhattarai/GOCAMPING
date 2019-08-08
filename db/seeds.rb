@@ -68,7 +68,8 @@ site1 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url":"https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg"
 )
 site2 = Site.create!(
     "host_id": user1.id,
@@ -89,7 +90,8 @@ site2 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://www.gokyotreksnepal.com/wp-content/uploads/2018/09/nepal-camping-trekking.jpg"
 )
 site3 = Site.create!(
     "host_id": user1.id,
@@ -110,7 +112,8 @@ site3 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://www.cityshor.com/uploads/article/12_2014/1417409544_906374_554771084562521_1158281277_o.jpg"
 )
 site4 = Site.create!(
     "host_id": user1.id,
@@ -131,7 +134,8 @@ site4 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "http://www.adventurepolygon.com/wp-content/uploads/2018/01/Camping-Near-Rara-Lake-Nepal-Tourist-Places-in-Nepal.jpg"
 )
 
 site5 = Site.create!(
@@ -153,7 +157,8 @@ site5 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://nepalecoadventure.com/wp-content/uploads/2015/05/Rara-Lake-Trekking-V.jpg"
 )
 site6 = Site.create!(
     "host_id": user1.id,
@@ -174,7 +179,8 @@ site6 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://www.adventureinyou.com/wp-content/uploads/2014/01/nepal-dolpo-trek-960x640.jpg"
 )
 site7 = Site.create!(
     "host_id": user1.id,
@@ -195,7 +201,8 @@ site7 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "http://ayangrinpoche.org/wp-content/uploads/2016/02/Temple-12_10-from-Yogi-Lama-Satcr.jpg"
 )
 site8 = Site.create!(
     "host_id": user1.id,
@@ -216,7 +223,8 @@ site8 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://newsin.asia/wp-content/uploads/2016/07/Nepal_View.jpg"
 )
 site9 = Site.create!(
     "host_id": user1.id,
@@ -237,7 +245,8 @@ site9 = Site.create!(
     "biking": true,
     "wildlife": true,
     "rafting": true,
-    "wifi": true
+    "wifi": true,
+    "image_url": "https://img.jakpost.net/c/2018/08/23/2018_08_23_52263_1535018091._large.jpg"
 )
 
 photo1 = Photo.create!(

@@ -18,7 +18,7 @@ class Booking extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        debugger
+       
         if (!this.props.currentUserId) {
             this.props.openModal('login')
         } else {
@@ -31,12 +31,13 @@ class Booking extends Component {
             booking.guest_id = this.props.currentUserId;
             booking.site_id = this.props.match.params.siteId;
             booking.guest_num = this.state.num_guests;
-            booking.cost *= num_days
+            booking.price *= num_days
 
             this.props.makeBooking(booking)
+                .then(() => this.props.fetchAllBookings())
                 .then(() => this.props.history.push(`/users/${this.props.currentUserId}`));
                 
-    
+         
         }
     }
 
@@ -71,7 +72,7 @@ class Booking extends Component {
                 {this.props.errors.map((error, idx) => (
                     <li key={`error-${idx}`} className="bookings_error">
                         &#10060; {error}.
-          </li>
+                    </li>
                 ))}
             </ul>
         )

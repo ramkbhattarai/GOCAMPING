@@ -6,7 +6,7 @@ import siteErrorsReducer from './site_errors_reducer';
 
 const errorsReducer = combineReducers({
     session: sessionErrorsReducer,
-     sites: siteErrorsReducer,
+    sites: siteErrorsReducer,
     
     bookings: bookings,
 })

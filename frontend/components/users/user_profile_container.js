@@ -5,6 +5,7 @@ import UserProfile from './user.profile';
 import { selectSites} from '../../reducers/selectors';
 
 const msp = (state, ownProps) => {
+    
     return (
         {
             bookings: state.entities.bookings,

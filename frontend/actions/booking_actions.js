@@ -70,8 +70,8 @@ export const makeBooking = booking => {
         return BookingApiUtil.createBooking(booking)
         .then(
             booking => {
-                debugger
-                alert("Your Booking Is Confirmed")
+                
+                //alert("Your Booking Is Confirmed")
                 return dispatch(receiveBooking(booking))
             }, errors => {
                

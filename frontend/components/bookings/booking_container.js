@@ -13,7 +13,7 @@ const msp = (state, ownProps) => {
             currentUserId: state.session.id,
             sites: state.entities.sites,
             site,
-            errors: state.errors.bookings || []
+            errors: state.errors.bookings
         }
     )
 }
