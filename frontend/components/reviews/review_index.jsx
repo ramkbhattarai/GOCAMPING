@@ -13,10 +13,12 @@ class ReviewIndex extends Component {
     }
 
     render() {
+       
         if (!this.props.reviews) {
             return null;
         }
         const reviews = Object.values(this.props.reviews).map(review => {
+           
             return (
                 <ReviewIndexItem
                     key={review.id}

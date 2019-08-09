@@ -24,11 +24,14 @@ class Api::ReviewsController < ApplicationController
         render :show 
     end
 
-    def update 
+    def update
         @review = Review.find(params[:id])
+        @review.author_id = current_user.id
+        
+       
         if @review.update(review_params)
             render :show 
-
+           
         else
             render json: @review.errors.full_messages, status: 401 
         end

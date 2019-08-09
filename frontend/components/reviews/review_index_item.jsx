@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 
 const ReviewIndexItem = ({ review, deleteReview, currentUserId }) => {
-  
-    if (review.author.id === currentUserId) {
+
+    if (review.author_id === currentUserId) {
         let createDate = format(review.created_at, 'MMMM Do, YYYY')
         return (
             <div className='review-index-item'>
@@ -16,7 +16,7 @@ const ReviewIndexItem = ({ review, deleteReview, currentUserId }) => {
                     <li className='review-user-description'>{review.body}</li>
                 </div>
                 <div className='delete-edit-review'>
-                    <Link className='delete-review-button' to={`/sites/${review.site_id}/reviews/${review.id}`}>Edit</Link>
+                    <Link className='edit-review-button' to={`/sites/${review.site_id}/reviews/${review.id}`}>Edit</Link>
                     <li><button className='delete-review-button' onClick={() => deleteReview(review.id)}>Delete</button></li>
                 </div>
             </div>

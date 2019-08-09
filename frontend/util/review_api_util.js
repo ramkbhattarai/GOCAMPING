@@ -34,12 +34,13 @@ export const createReview = (siteId, review ) => {
 }
 
 export const updateReview = (siteId, review) => {
+   
     return(
         $.ajax(
             {
                 method: 'patch',
                 url: `api/sites/${siteId}/reviews/${review.id}`,
-                data: review
+                data: {review}
             }
         )
     )

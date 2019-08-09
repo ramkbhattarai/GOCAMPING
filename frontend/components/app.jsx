@@ -8,7 +8,7 @@ import SiteSearchContainer from './explore/site_search_container';
 import SiteFormContainer from './sites/site_form_container';
 import  UserProfileContainer from './users/user_profile_container';
 import CreateReviewContainer from './reviews/create_review_container';
-
+import EditReviewContainer from './reviews/edit_review_container';
 const App = () => (
     <div>
         <Modal />
@@ -23,6 +23,7 @@ const App = () => (
             <Route exact path="/host" component={SiteFormContainer} />
             <Route exact path="/users/:userId" component={UserProfileContainer}/>
             <Route exact path="/sites/:siteId/review/new" component={CreateReviewContainer} />
+            <Route path="/sites/:siteId/reviews/:reviewId" component={EditReviewContainer} />
             <Redirect to="/" />
         </Switch>
     </div>
