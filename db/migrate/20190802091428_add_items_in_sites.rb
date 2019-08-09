@@ -8,5 +8,6 @@ class AddItemsInSites < ActiveRecord::Migration[5.2]
     add_column :sites, :hiking, :boolean
     add_column :sites, :wildlife, :boolean
     add_column :sites, :rafting, :boolean
+
   end
 end

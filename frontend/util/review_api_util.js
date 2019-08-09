@@ -44,7 +44,7 @@ export const updateReview = (review, siteId) => {
     )
 }
 
-export const deleteReveiw =(reviewId) =>{
+export const deleteReview =(reviewId) =>{
     return(
         $.ajax(
             {

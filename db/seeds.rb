@@ -69,10 +69,10 @@ site1 = Site.create!(
     "wildlife": true,
     "rafting": true,
     "wifi": true,
-    "image_url": "https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg"
+     "image_url": "https://www.holidify.com/images/cmsuploads/compressed/camping-1835352_1920_20180627142357.jpg"
 )
 site2 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user2.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
@@ -94,7 +94,7 @@ site2 = Site.create!(
     "image_url": "https://www.gokyotreksnepal.com/wp-content/uploads/2018/09/nepal-camping-trekking.jpg"
 )
 site3 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user3.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
@@ -116,7 +116,7 @@ site3 = Site.create!(
     "image_url": "https://www.cityshor.com/uploads/article/12_2014/1417409544_906374_554771084562521_1158281277_o.jpg"
 )
 site4 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user4.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
@@ -135,7 +135,7 @@ site4 = Site.create!(
     "wildlife": true,
     "rafting": true,
     "wifi": true,
-    "image_url": "http://www.adventurepolygon.com/wp-content/uploads/2018/01/Camping-Near-Rara-Lake-Nepal-Tourist-Places-in-Nepal.jpg"
+   "image_url": "http://www.adventurepolygon.com/wp-content/uploads/2018/01/Camping-Near-Rara-Lake-Nepal-Tourist-Places-in-Nepal.jpg"
 )
 
 site5 = Site.create!(
@@ -158,10 +158,10 @@ site5 = Site.create!(
     "wildlife": true,
     "rafting": true,
     "wifi": true,
-    "image_url": "https://nepalecoadventure.com/wp-content/uploads/2015/05/Rara-Lake-Trekking-V.jpg"
+   "image_url": "https://nepalecoadventure.com/wp-content/uploads/2015/05/Rara-Lake-Trekking-V.jpg"
 )
 site6 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user2.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
@@ -183,7 +183,7 @@ site6 = Site.create!(
     "image_url": "https://www.adventureinyou.com/wp-content/uploads/2014/01/nepal-dolpo-trek-960x640.jpg"
 )
 site7 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user3.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
@@ -205,7 +205,7 @@ site7 = Site.create!(
     "image_url": "http://ayangrinpoche.org/wp-content/uploads/2016/02/Temple-12_10-from-Yogi-Lama-Satcr.jpg"
 )
 site8 = Site.create!(
-    "host_id": user1.id,
+    "host_id": user4.id,
     "title": "Mountain calling",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,

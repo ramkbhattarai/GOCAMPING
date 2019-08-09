@@ -85,7 +85,7 @@ export const updateReview = (review, siteId) => {
     }
 }
 
-export const destroyReview = (reviewId) => {
+export const deleteReview = (reviewId) => {
     return dispatch => {
         return ReviewApiUtil.deleteReview(reviewId)
             .then(
@@ -96,13 +96,3 @@ export const destroyReview = (reviewId) => {
     }
 }
 
-export const fetchReviewErrors = (errors) => {
-    return dispatch => {
-        return ReviewApiUtil.fetchReviewErrors(errors)
-            .then(
-                errors => {
-                    return dispatch(receiveReviewErrors(errors))
-                }
-            )
-    }
-}
