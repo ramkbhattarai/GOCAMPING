@@ -8,8 +8,8 @@ class Booking extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            num_guests: 1,
-            price: this.props.site.cost
+            guest_num: 1,
+            
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,8 +34,8 @@ class Booking extends Component {
             const booking = Object.assign({}, this.state);
             booking.guest_id = this.props.currentUserId;
             booking.site_id = this.props.match.params.siteId;
-            booking.guest_num = this.state.num_guests;
-            booking.price *= num_days
+            booking.guest_num = this.state.guest_num;
+            //booking.price *= num_days
 
             this.props.clearErrors();
 
@@ -67,10 +67,10 @@ class Booking extends Component {
 
     handleNumGuests(change) {
         return e => {
-            if (change === '+' && (this.state.num_guests + 1 <= this.props.site.guest_num)) {
-                this.setState({ num_guests: (this.state.num_guests += 1) });
-            } else if (change === '-' && (this.state.num_guests - 1 >= 1)) {
-                this.setState({ num_guests: (this.state.num_guests -= 1) });
+            if (change === '+' && (this.state.guest_num + 1 <= this.props.site.guest_num)) {
+                this.setState({ guest_num: (this.state.guest_num += 1) });
+            } else if (change === '-' && (this.state.guest_num - 1 >= 1)) {
+                this.setState({ guest_num: (this.state.guest_num -= 1) });
             }
         }
     }
@@ -92,7 +92,7 @@ class Booking extends Component {
         const { site } = this.props;
         const today = new Date();
         const checkIn = this.state.check_in ? this.nextDay(new Date(this.state.check_in)) : this.nextDay(today)
-
+        
         return (
             <div className="widget_container">
                 <form onSubmit={this.handleSubmit}>
@@ -138,7 +138,7 @@ class Booking extends Component {
                                     <div className="label">Guests</div>
                                     <div className="widget_guests">
                                         <a onClick={this.handleNumGuests('-')}>-</a>
-                                        <p className="booking_num_guests">{this.state.num_guests}</p>
+                                        <p className="booking_num_guests">{this.state.guest_num}</p>
                                         <a onClick={this.handleNumGuests('+')}>+</a>
                                     </div>
                                 </div>

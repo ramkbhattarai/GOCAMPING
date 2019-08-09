@@ -22,7 +22,7 @@ class ReviewIndex extends Component {
                     key={review.id}
                     review={review}
                     deleteReview={this.props.deleteReview}
-                    currentUser={this.props.currentUser}
+                    currentUserId={this.props.currentUserId}
                 />
             )
         })

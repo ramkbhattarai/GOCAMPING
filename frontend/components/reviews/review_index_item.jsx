@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 
-const ReviewIndexItem = ({ review, deleteReview, currentUser }) => {
-    if (review.user.id === currentUser) {
+const ReviewIndexItem = ({ review, deleteReview, currentUserId }) => {
+  
+    if (review.author.id === currentUserId) {
         let createDate = format(review.created_at, 'MMMM Do, YYYY')
         return (
             <div className='review-index-item'>
                 <div className='review-item-values'>
                     <li className='review-user-name'>
-                        <div className="review_name">{review.user.fname}</div>
+                        <div className="review_name">{review.author.fname}</div>
                         <div className="review_date">{createDate}</div>
                     </li>
                     <li className='review-user-description'>{review.body}</li>
@@ -26,7 +27,7 @@ const ReviewIndexItem = ({ review, deleteReview, currentUser }) => {
             <div className='review-index-item'>
                 <div className='review-item-values'>
                     <li className='review-user-name'>
-                        <div className="review_name">{review.user.fname}</div>
+                        <div className="review_name">{review.author.fname}</div>
                         <div className="review_date">{createDate}</div>
                     </li>
                     <li className='review-user-description'>

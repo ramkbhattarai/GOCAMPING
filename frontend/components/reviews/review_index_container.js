@@ -4,9 +4,10 @@ import ReviewIndex from './review_index';
 import { fetchReviews, fetchReview, deleteReview } from '../../actions/review_actions';
 
 const msp = (state) => {
+    
     return {
         reviews: state.entities.reviews,
-        currentUser: state.session.id
+        currentUserId: state.session.id
     };
 };
 

@@ -23,11 +23,11 @@ export const receiveReview = review => {
     )
 }
 
-export const removeReview = review => {
+export const removeReview = reviewId => {
     return (
         {
             type: REMOVE_REVIEW,
-            reviewId: review.id
+            reviewId
         }
     )
 }
@@ -63,20 +63,22 @@ export const fetchReview = (reviewId) => {
     }
 }
 
-export const createReview = (review, siteId) => {
+export const createReview = (siteId, review) => {
     return dispatch => {
-        return ReviewApiUtil.createReview(review, siteId)
+       
+        return ReviewApiUtil.createReview(siteId, review)
             .then(
                 review => {
+                    
                     return dispatch(receiveReview(review))
                 }
             )
     }
 }
 
-export const updateReview = (review, siteId) => {
+export const updateReview = (siteId,review) => {
     return dispatch => {
-        return ReviewApiUtil.updateReview(review, siteId)
+        return ReviewApiUtil.updateReview(siteId, review)
             .then(
                 review => {
                     return dispatch(receiveReview(review))
@@ -89,8 +91,8 @@ export const deleteReview = (reviewId) => {
     return dispatch => {
         return ReviewApiUtil.deleteReview(reviewId)
             .then(
-                review => {
-                    return dispatch(removeReview(review))
+                reviewId => {
+                    return dispatch(removeReview(reviewId))
                 }
             )
     }

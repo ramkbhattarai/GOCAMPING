@@ -20,19 +20,20 @@ export const fetchReview = (reviewId) => {
     )
 }
 
-export const createReview = (review, siteId) => {
+export const createReview = (siteId, review ) => {
+    
     return(
         $.ajax(
             {
                 method: 'post',
-                url: `api/sites/${siteId}/reveiws`,
+                url: `api/sites/${siteId}/reviews`,
                 data: {review}
             }
         )
     )
 }
 
-export const updateReview = (review, siteId) => {
+export const updateReview = (siteId, review) => {
     return(
         $.ajax(
             {
@@ -48,7 +49,7 @@ export const deleteReview =(reviewId) =>{
     return(
         $.ajax(
             {
-                method: 'destroy',
+                method: 'delete',
                 url: `api/reviews/${reviewId}`
             }
         )

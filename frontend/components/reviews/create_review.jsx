@@ -23,7 +23,9 @@ class CreateReview extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createReview(this.props.match.params.siteId, this.state).then(
+       
+        this.props.createReview(this.props.match.params.siteId, this.state)
+        .then(
             () => this.props.history.push(`/sites/${this.props.match.params.siteId}`))
     }
 
@@ -37,7 +39,7 @@ class CreateReview extends Component {
             <div className='create_review_form'>
                 <div className='review_spot_title'>{this.props.site.title}</div>
                 <div className="review_post_photo">
-                    <img src="this.props.site.image_url" alt=""/>
+                    <img src={`${this.props.site.image_url}`} alt=""/>
                 </div>
                 <form className='review_form' onSubmit={this.handleSubmit}>
                     <textarea className='review_description'
