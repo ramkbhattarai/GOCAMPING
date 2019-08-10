@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *
  *= require_self
  */
 
@@ -77,15 +77,6 @@ body {
 
 }
 
-.header-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 15px;
-  margin: auto;
-  margin-right: 0px;
-  height: 18px;
-}
 
 .login-signup-button {
   margin: auto;
@@ -166,18 +157,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.hipcamp-logo {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 600;
-  width: 135px;
-  letter-spacing: 3px;
-  margin-left: 15px;
-  font-size: 18px;
-}
-
-
 
 
 .header-button {

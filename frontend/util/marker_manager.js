@@ -29,7 +29,7 @@ class MarkerManager {
         const markerInfoWindow = new google.maps.InfoWindow({
             content:
                 `<div class="infowindow">
-              <img id="infoWindowImage" src=${site.photos[0]} alt="">
+              <img id="infoWindowImage" src=${site.image_url} alt="">
               <a href="/#/sites/${site.id}" style="display: flex;">
                 <div id="infoWindowDetails">
                   <h2 class="infowindow-title">${site.title}</h2>

@@ -110,16 +110,9 @@
     color: $font-color;
 }
 
-.user_profile_booking_status {
-    margin: 0px 50px;
-}
 
-.user_bookings_header {
-    padding: 20px 0px 0px 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
+
+
 
 .booked_spots_list {
     display: flex;
@@ -183,18 +176,8 @@
     }
 }
 
-.user_link_index {
-    border-bottom: $border;
 
-    &:hover {
-        border-bottom: 1px solid #000;
-    }
-}
 
-.user_status_header {
-    font-size: 1rem;
-    padding: 20px;
-}
 
 .user_booking_spot {
     display: flex;
@@ -295,39 +278,8 @@
     }
 } 
 
-.booked_spots_header {
-    width: 25%;
-    display: flex;
-    padding-bottom: 20px;
 
-    @include large {
-        width: 93.3%;
-        padding-bottom: 0px;
-        margin: 0 auto;
-        margin-bottom: 3%;
-    }
 
-    @include medium {
-        width: 80%;
-        padding-bottom: 0px;
-        margin: 0 auto;
-        margin-bottom: 3%;
-    }
-}
-
-.booked_spots_number {
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 10px 0px 20px 0px;
-
-    @include large {
-        padding-top: 2%;
-    }
-
-    @include medium {
-        padding-top: 5%;
-    }
-}
 
 .booking_num_guests {
     width: 55%;
