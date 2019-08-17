@@ -51,7 +51,7 @@ user4 = User.create!(
 
 site1 = Site.create!(
     "host_id": user1.id,
-    "title": "Mountain calling",
+    "title": "Camp near by mountains",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -73,7 +73,7 @@ site1 = Site.create!(
 )
 site2 = Site.create!(
     "host_id": user2.id,
-    "title": "Mountain calling",
+    "title": "Oh thy! Majestic Mountains",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -95,7 +95,7 @@ site2 = Site.create!(
 )
 site3 = Site.create!(
     "host_id": user3.id,
-    "title": "Mountain calling",
+    "title": "Snow capped Mountain camping",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -117,7 +117,7 @@ site3 = Site.create!(
 )
 site4 = Site.create!(
     "host_id": user4.id,
-    "title": "Mountain calling",
+    "title": "Enveloped within the arms of nature",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -162,7 +162,7 @@ site5 = Site.create!(
 )
 site6 = Site.create!(
     "host_id": user2.id,
-    "title": "Mountain calling",
+    "title": "Go back to nature",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -184,7 +184,7 @@ site6 = Site.create!(
 )
 site7 = Site.create!(
     "host_id": user3.id,
-    "title": "Mountain calling",
+    "title": "Open hills",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -206,7 +206,7 @@ site7 = Site.create!(
 )
 site8 = Site.create!(
     "host_id": user4.id,
-    "title": "Mountain calling",
+    "title": "Mountains in Sight",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
@@ -228,7 +228,7 @@ site8 = Site.create!(
 )
 site9 = Site.create!(
     "host_id": user1.id,
-    "title": "Mountain calling",
+    "title": "Refreshing filed in the lap of mountains",
     "body": "mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,

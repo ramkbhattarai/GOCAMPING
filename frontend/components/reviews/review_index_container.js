@@ -4,7 +4,7 @@ import ReviewIndex from './review_index';
 import { fetchReviews, fetchReview, deleteReview } from '../../actions/review_actions';
 
 const msp = (state) => {
-  
+  //debugger
     return {
         reviews: state.entities.reviews,
         currentUserId: state.session.id

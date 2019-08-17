@@ -15,6 +15,7 @@ export const receiveSites = sites => {
 }
 
 export const receiveSite = (site) => {
+    
     return (
         {
             type: RECEIVE_SITE,

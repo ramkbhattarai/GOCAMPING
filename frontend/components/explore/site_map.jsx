@@ -19,7 +19,7 @@ class SiteMap extends Component {
         let mapCenter = { lat: 28.530659, lng: 83.878058 };
         const mapOptions = {
             center: mapCenter,
-            zoom: 7
+            zoom: 6
         };
         let geoLocation = this.props.geoLocation;
         this.map = new google.maps.Map(this.mapNode, mapOptions);

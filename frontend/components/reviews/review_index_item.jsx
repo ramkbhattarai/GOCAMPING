@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 
 const ReviewIndexItem = ({ review, deleteReview, currentUserId }) => {
-
+    //debugger
     if (review.author_id === currentUserId) {
-        let createDate = format(review.created_at, 'MMMM Do, YYYY')
+        let createDate = format(review.created_at, 'MMMM DD, YYYY')
         return (
             <div className='review-index-item'>
                 <div className='review-item-values'>

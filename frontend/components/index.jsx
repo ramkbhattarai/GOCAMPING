@@ -155,7 +155,7 @@ class Index extends React.Component {
                                     <img src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/004606ca2b44e3d7402c87b99e62bcd91f960fb7/big-b5abb9baa0f7f4a0884170b2caaf483e.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <h3 className="splash_section_name">Open hills</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
@@ -167,7 +167,7 @@ class Index extends React.Component {
                                     <img src="https://trekroute.com/wp-content/uploads/2014/12/Ghandruk-Short-easy-trek-nepal.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <h3 className="splash_section_name">Mountains in Sight</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
@@ -179,7 +179,7 @@ class Index extends React.Component {
                                     <img src="http://www.excitingnepalholidays.com/images/panchase-trek.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Go back to nature</h3>
+                                    <h3 className="splash_section_name">Refreshing filed in the lap of mountains</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
@@ -195,6 +195,7 @@ class Index extends React.Component {
 }
 
 const msp = (state) => {
+    
     return {
         state
     }
