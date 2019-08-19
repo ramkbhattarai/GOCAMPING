@@ -1,11 +1,11 @@
 class Api::ReviewsController < ApplicationController
     def index 
-        # if params[:site_id]
-        # @reviews = Site.find(id: params[:site_id]).reviews
+        if params[:site_id]
+            @reviews = Site.find(params[:site_id]).reviews
+            render :index
+        end
+        # @reviews = Review.all 
         # render :index
-        # end
-        @reviews = Review.all 
-        render :index
     end
 
     def create
