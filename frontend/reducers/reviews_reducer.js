@@ -8,23 +8,26 @@ const reviewsReducer = (state = defaultState, action) => {
     Object.freeze(state);
     switch(action.type){
         case RECEIVE_ALL_REVIEWS:
-            //return action.reviews;
-            return merge({},state,action.reviews);
+            
+            return action.reviews;
+            break;
+            //return merge({}, state, action.reviews);
             case RECEIVE_REVIEW:
 
            // return  action.review;
             
                 return merge({},state, {[action.review.id]: action.review});
+                break;
                 case REMOVE_REVIEW:
                    
                     let a = merge({},state)
                     delete a[action.reviewId]
                     return a;
-
-                    // case RECEIVE_SITE:
-                    //     return action.site;
+                    break;
+                        
                     default:
                         return state;
+                        break;
     }
 }
 

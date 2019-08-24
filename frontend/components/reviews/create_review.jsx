@@ -23,7 +23,7 @@ class CreateReview extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-       
+      
         this.props.createReview(this.props.match.params.siteId, this.state)
         .then(
             () => this.props.history.push(`/sites/${this.props.match.params.siteId}`))

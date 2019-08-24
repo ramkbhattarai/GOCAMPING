@@ -25,11 +25,11 @@ class Search extends Component {
     }
 
     render() {
-        if (this.props.location.pathname === '/host' || this.props.location.pathname.includes("review")) {
-            return (
-                null
-            )
-        } else {
+        // if (this.props.location.pathname === '/host' || this.props.location.pathname.includes("review")) {
+        //     return (
+        //         null
+        //     )
+        // } else {
             return (
                 <div className="search_container">
                     <i className="fas fa-search search_icon"></i>
@@ -40,7 +40,7 @@ class Search extends Component {
                     </form>
                 </div>
             );
-        }
+        // }
     }
 }
 

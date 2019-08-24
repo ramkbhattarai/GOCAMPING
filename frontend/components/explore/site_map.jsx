@@ -16,6 +16,7 @@ class SiteMap extends Component {
 
     componentDidMount() {
         fetchSites();
+       // debugger
         let mapCenter = { lat: 28.530659, lng: 83.878058 };
         const mapOptions = {
             center: mapCenter,
@@ -44,9 +45,12 @@ class SiteMap extends Component {
      
 
     centerMapOnSearch() {
+        //debugger
         this.geoCoder.geocode({ 'address': this.props.geoLocation }, (results, status) => {
             if (status === "OK") {
+               // debugger
                 if (results[0]) {
+                   // debugger
                     this.map.setZoom(12);
                     let mapCenter = results[0].geometry.location;
                     this.map.setCenter(mapCenter);

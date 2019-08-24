@@ -20,7 +20,7 @@ const App = () => (
             <Route exact path="/" component={Index} />
             <Route exact path="/sites/:siteId" component={SiteContainer}/>
             <Route exact path='/sites' component={SiteSearchContainer}/>
-            <Route exact path="/host" component={SiteFormContainer} />
+            {/* <Route exact path="/host" component={SiteFormContainer} /> */}
             <Route exact path="/users/:userId" component={UserProfileContainer}/>
             <Route exact path="/sites/:siteId/review/new" component={CreateReviewContainer} />
             <Route path="/sites/:siteId/reviews/:reviewId" component={EditReviewContainer} />

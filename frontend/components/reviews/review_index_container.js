@@ -3,11 +3,12 @@ import { withRouter } from 'react-router';
 import ReviewIndex from './review_index';
 import { fetchReviews, fetchReview, deleteReview } from '../../actions/review_actions';
 
-const msp = (state) => {
+const msp = (state, ownProps) => {
   //debugger
     return {
         reviews: state.entities.reviews,
-        currentUserId: state.session.id
+        currentUserId: state.session.id,
+        currentSite: state.entities.sites[ownProps.match.params.siteId]
     };
 };
 

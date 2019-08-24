@@ -11,12 +11,14 @@ class ReviewIndex extends Component {
         window.scrollTo(0, 0);
         this.props.fetchReviews(this.props.match.params.siteId);
     }
+   
 
     render() {
        
-        if (!this.props.reviews) {
+        if (!this.props.reviews || !this.props.currentSite) {
             return null;
         }
+        //debugger
         const reviews = Object.values(this.props.reviews).map(review => {
            
             return (
@@ -25,6 +27,7 @@ class ReviewIndex extends Component {
                     review={review}
                     deleteReview={this.props.deleteReview}
                     currentUserId={this.props.currentUserId}
+                    // currentSite={this.props.currentSite}
                 />
             )
         })

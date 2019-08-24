@@ -5,7 +5,7 @@ import { updateFilter, receiveGeolocation } from '../../actions/location_filter_
 import { clearAllFilters } from '../../actions/filter_actions';
 
 const msp = (state) => {
-   
+   //debugger
     return(
         {
 

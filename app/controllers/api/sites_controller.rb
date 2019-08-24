@@ -1,7 +1,7 @@
 class Api::SitesController < ApplicationController
    
     def index 
-        @sites = bounds ? Site.in_bounds(bounds) : Site.all 
+        @sites =  bounds ? Site.in_bounds(bounds) : Site.all
         render :index
     end
 
