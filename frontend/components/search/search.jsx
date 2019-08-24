@@ -35,12 +35,12 @@ class Search extends Component {
                     <i className="fas fa-search search_icon"></i>
                     <form className="search_form" onSubmit={this.handleSubmit}>
                         <input placeholder="Search..." className="search_nav_bar" onChange={this.update('searchParams')}
-                            value={this.state['']}
+                            value={this.state['searchParams']}
                         />
                     </form>
                 </div>
             );
-        // }
+         //}
     }
 }
 

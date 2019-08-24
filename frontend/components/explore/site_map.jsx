@@ -10,7 +10,7 @@ class SiteMap extends Component {
         this.geoCoder = new google.maps.Geocoder();
         this.centerMapOnSearch = this.centerMapOnSearch.bind(this);
         this.centerMap = this.centerMap.bind(this);
-        this.registerListeners = this.registerListeners.bind(this);
+      //  this.registerListeners = this.registerListeners.bind(this);
        
     }
 
@@ -22,24 +22,25 @@ class SiteMap extends Component {
             center: mapCenter,
             zoom: 6
         };
-        let geoLocation = this.props.geoLocation;
+        //let geoLocation = this.props.geoLocation;
+       // const map = this.refs.map;
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         this.MarkerManager = new MarkerManager(this.map);
         this.MarkerManager.updateMarkers(this.props.sites);
-        this.registerListeners();
+        //this.registerListeners();
     }
 
-    registerListeners() {
-        google.maps.event.addListener(this.map, 'idle', () => {
-            const { north, south, east, west } = this.map.getBounds().toJSON();
-            let bounds = {
-                northEast: { lat: north, log: east },
-                southWest: { lat: south, log: west }
-            };
+    // registerListeners() {
+    //     google.maps.event.addListener(this.map, 'idle', () => {
+    //         const { north, south, east, west } = this.map.getBounds().toJSON();
+    //         let bounds = {
+    //             northEast: { lat: north, log: east },
+    //             southWest: { lat: south, log: west }
+    //         };
 
-            this.props.updateFilter('location', bounds);
-        });
-    }
+    //        // this.props.updateFilter('location', bounds);
+    //     });
+    // }
 
     
      
@@ -51,8 +52,8 @@ class SiteMap extends Component {
                // debugger
                 if (results[0]) {
                    // debugger
-                    this.map.setZoom(12);
-                    let mapCenter = results[0].geometry.location;
+                    this.map.setZoom(8);
+                    let mapCenter = { lat: 28.530659, lng: 83.878058 };
                     this.map.setCenter(mapCenter);
                     const newBounds = this.map.getBounds();
                     this.map.fitBounds(newBounds);

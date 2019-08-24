@@ -33,7 +33,7 @@ class Index extends React.Component {
         return e => {
             this.setState(
                 {
-                    [field]: e.target.value
+                    [field]: e.currentTarget.value
                 }
             )
         }
