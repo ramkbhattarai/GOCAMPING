@@ -31,7 +31,7 @@ class SiteIndex extends Component {
                 key={site.id}
                 user={this.props.user}
             />
-        ))
+        ));
         if (filteredSites.length === 0) {
             return (
                 <div className="spot_index">

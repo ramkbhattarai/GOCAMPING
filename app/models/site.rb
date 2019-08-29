@@ -54,8 +54,8 @@ class Site < ApplicationRecord
 
     def self.in_bounds(bounds)
         self.where('lat < ?', bounds[:northEast][:lat])
-            .where('lat < ?', bounds[:southWest][:lat])
-            .where('lat < ?', bounds[:southWest][:log])
-            .where('lat < ?', bounds[:northEast][:log])
+            .where('lat > ?', bounds[:southWest][:lat])
+            .where('log > ?', bounds[:southWest][:log])
+            .where('log < ?', bounds[:northEast][:log])
     end
 end
