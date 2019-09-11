@@ -218,10 +218,11 @@ class Index extends React.Component {
                                         <a target="_blank" href="https://ramkbhattarai.github.io/ramkbhattarai/" className="social_link"><i id="portfolio_link" className="fas fa-user"> &nbsp; Portfolio</i></a>
 
                                     </div>
+                                    <div className="social_link_li">
+                                        <a target="_blank" href="https://angel.co/ram-krishna-bhattarai" className="social_link"><i className="fab fa-angellist"> &nbsp; AngelList</i></a>
+                                    </div>
                                 </div>
-                                <div className="foot_social_text">
-
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
