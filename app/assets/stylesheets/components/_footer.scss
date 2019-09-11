@@ -1,0 +1,120 @@
+.foot_div {
+    background-image: url("https://camp-away-dev.s3.amazonaws.com/footer_img.png");
+    display: flex;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    background-color: #41305c;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-position-y: 100%, 100%;
+    background-size: auto 199px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+}
+
+.foot_div_section {
+    padding: 30px 0px;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.foot_description {
+    width: 50%;
+    margin-top: 30px;
+    position: relative;
+    left: 4.5%;
+}
+
+.foot_description_title {
+    color: #70539f;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.foot_description_text {
+    font-family: $font-family;
+    color: #fff;
+    font-size: .9rem;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.foot_social {
+    width: 25%;
+    color: #fff;
+    margin: 30px;
+    position: relative;
+    left: 7%;
+}
+
+.foot_social_title {
+    color: #70539f;
+    text-align: left;
+}
+
+.foot_social_text {
+    color: #fff;
+    font-size: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.social_link {
+    font-family: $font-family;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.social_link_li {
+    margin-bottom: 10px;
+
+    &:hover {
+        color: #C6AAE2;
+    }
+}
+
+.social_link i:hover {
+    color: #C6AAE2;
+}
+
+.fas {
+    display: flex !important;
+    font-weight: 700;
+}
+
+#portfolio_link {
+    font-weight: 400;
+}
+
+#marker_icon {
+    padding: 0px 7px 0px 3px;
+}
+
+#facebook_icon {
+    padding-top: 10px;
+}
+
+.foot_bottom {
+    background-color: #3e7e96;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}   
+
+.pull-left {
+    padding-top: 7px;
+    margin: 0 auto;
+}
+
+.pull-right {
+    padding-top: 7px;
+    margin: 0 auto;
+}

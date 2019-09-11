@@ -188,6 +188,44 @@ class Index extends React.Component {
                         </div>
                     </div>
                 </main>
+                <footer>
+                    <div className="foot_div">
+                        <div className="foot_div_section">
+                            <div className="foot_description">
+                                <div className="foot_description_title">
+                                    GoCamping is everywhere you want to camp.
+                            </div>
+                                <div className="foot_description_text">
+                                    Discover unique experiences on nature preserves, farms,vineyards, and public campgrounds across Nepal. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites,car camping, tiny houses, glamping tents and more.
+                            </div>
+                            </div>
+
+                            <div className="foot_social">
+                                <div className="foot_social_title">
+                                    <div className="foot_description_title">
+                                        Social
+                                </div>
+
+                                    <div className="social_link_li">
+                                        <a target="_blank" href="https://github.com/ramkbhattarai" className="social_link"><i className="fab fa-github">&nbsp; Github</i></a>
+
+                                    </div>
+                                    <div className="social_link_li">
+                                        <a target="_blank" href="https://www.linkedin.com/in/ram-krishna-bhattarai-bb761a17a/" className="social_link"><i className="fab fa-linkedin">&nbsp; Linkedin</i></a>
+
+                                    </div>
+                                    <div className="social_link_li">
+                                        <a target="_blank" href="https://ramkbhattarai.github.io/ramkbhattarai/" className="social_link"><i id="portfolio_link" className="fas fa-user"> &nbsp; Portfolio</i></a>
+
+                                    </div>
+                                </div>
+                                <div className="foot_social_text">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
    
             </>
         )

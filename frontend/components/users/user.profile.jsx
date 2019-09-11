@@ -83,7 +83,7 @@ class UserProfile extends React.Component{
                                                 <p><nobr className="user_booking_subheader">Check In:</nobr> {checkIn}</p>
                                                 <p><nobr className="user_booking_subheader">Check Out:</nobr> {checkOut}</p>
                                                 <p><nobr className="user_booking_subheader">Number of Guests:</nobr> {booking.guest_num}</p>
-                                                <p><nobr className="user_booking_subheader">Total Price:</nobr> ${booking.price}</p>
+                                                <p><nobr className="user_booking_subheader">Total Price:</nobr> ${booking.site.cost}</p>
                                             </div>
                                         </div>
                                         <button className="booking_delete_button" onClick={() => this.props.deleteBooking(booking.id)}>Delete</button>
