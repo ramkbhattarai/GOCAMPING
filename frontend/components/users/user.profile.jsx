@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {geocodeByAddress} from 'react-places-autocomplete';
-import { format } from 'date-fns';
+import { format, differenceInDays } from 'date-fns';
 
 class UserProfile extends React.Component{
     constructor(props){
@@ -73,7 +73,10 @@ class UserProfile extends React.Component{
                             {bookingArr.map(booking => {
                                 let checkIn = format(booking.check_in, 'ddd, MMM Do');
                                 let checkOut = format(booking.check_out, 'ddd, MMM Do');
+                                let day1 = format(booking.check_in, "YYYY-MM-DD");
+                                let day2 = format(booking.check_out, "YYYY-MM-DD");
 
+                                let numberOfDays = differenceInDays(day2, day1);
                                 return (
                                     <li className="booked_spot_items" key={booking.id}>
                                         <Link className="user_booking_title" to={`/sites/${booking.site.id}`}>{booking.site.title}</Link>
@@ -83,7 +86,7 @@ class UserProfile extends React.Component{
                                                 <p><nobr className="user_booking_subheader">Check In:</nobr> {checkIn}</p>
                                                 <p><nobr className="user_booking_subheader">Check Out:</nobr> {checkOut}</p>
                                                 <p><nobr className="user_booking_subheader">Number of Guests:</nobr> {booking.guest_num}</p>
-                                                <p><nobr className="user_booking_subheader">Total Price:</nobr> ${booking.site.cost}</p>
+                                                <p><nobr className="user_booking_subheader">Total Price:</nobr> ${booking.site.cost * numberOfDays}</p>
                                             </div>
                                         </div>
                                         <button className="booking_delete_button" onClick={() => this.props.deleteBooking(booking.id)}>Delete</button>
