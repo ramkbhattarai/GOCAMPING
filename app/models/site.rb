@@ -28,8 +28,8 @@
 #
 
 class Site < ApplicationRecord
-    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, :spots, :image_url, presence: true
-    validates :campfire, :wifi, :toilet, :shower_room, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, inclusion: { in: [true, false] }
+    validates :title, :body, :host_id, :cost, :lat, :log, :guest_num, :spots, presence: true
+    validates :campfire, :toilet, :shower_room, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, inclusion: { in: [true, false] }
     
     belongs_to :host,
     primary_key: :id,
@@ -42,15 +42,17 @@ class Site < ApplicationRecord
     foreign_key: :site_id,
     class_name: :Review
 
-    has_many :photos,
-    primary_key: :id,
-    foreign_key: :site_id,
-    class_name: :Photo  
+    # has_many :photos,
+    # primary_key: :id,
+    # foreign_key: :site_id,
+    # class_name: :Photo  
 
     has_many :bookings,
     primary_key: :id,
     foreign_key: :site_id,
     class_name: :Booking
+
+    has_many_attached :photos
 
     def self.in_bounds(bounds)
         self.where('lat < ?', bounds[:northEast][:lat])

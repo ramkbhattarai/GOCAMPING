@@ -38,7 +38,7 @@ export const destroySite = site => {
     return (
         {
             type: DESTROY_SITE,
-            siteId: site.id
+            siteId: site
         }
     )
 }
@@ -87,8 +87,8 @@ export const hostSite = (site) => {
     }
 }
 
-export const deleteSite = id =>{
-    return dispatch =>{
+export const deleteSite = id => {
+    return dispatch => {
         return SiteApiUtil.deleteSite(id)
         .then(
             site => {

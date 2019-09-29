@@ -10,16 +10,17 @@ const sitesReducer = (state = _siteDefault, action) => {
            
             return merge({}, state, action.sites)
             case RECEIVE_SITE:
-                
                 return merge({}, state, {[action.site.id]: action.site})
-                case CREATE_SITE:
-                    return merge({}, state, action.site)
-                    case DESTROY_SITE:
-                        let newstate = merge({}, state);
-                        delete newstate[action.siteId]
-                        return newstate
-                default:
-                    return state 
+            case CREATE_SITE:
+                return merge({}, state, action.site)
+            case DESTROY_SITE: {
+                debugger
+                let newstate = merge({}, state);
+                delete newstate[action.siteId]
+                return newstate
+            }
+            default:
+                return state 
 
     }
 }

@@ -10,7 +10,6 @@ const msp = (state, ownProps) => {
         {
            site,
            currentUserId: state.session.id, 
-           host: state.entities.users[site.host_id] || { fname: "", lname: ""},
            numReviews: Object.values(state.entities.reviews).length
         }
     )

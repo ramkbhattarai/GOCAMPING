@@ -73,7 +73,7 @@ body {
 
   height: 18px;
   color: #333333;
-   border-bottom: 1px solid #ebebeb;
+  //  border-bottom: 1px solid #ebebeb;
 
 }
 
@@ -98,17 +98,17 @@ body {
 }
 
 .signup-button {
-  font-size: $font-size;
+  font-size: 1rem;
 }
 
 .login-button {
-  font-size: $font-size;
+  font-size: 1rem;
   margin-left: 8px;
 }
 
 .demo-user-button {
   color:  #40d9ac;
-  font-size: $font-size;
+  font-size: 1rem;
   margin: 5px;
   border: 1px solid rgb(64, 217, 172);
   padding: 3px;
@@ -117,7 +117,7 @@ body {
 }
 
 .demo-user-button:hover {
-  font-size: $font-size;
+  font-size:1rem;
   margin: 5px;
   color: white;
   border:  $border;
@@ -309,5 +309,40 @@ body {
     
     margin: 5px;
     width: 85px;
+}
+
+.host_button {
+  // color:  #40d9ac;
+  font-size: 1rem;
+  margin: 5px;
+  // border: 1px solid rgb(64, 217, 172);
+  padding: 3px;
+//  transition: .3s;
+  
+}
+
+.host_button:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
+.header-name {
+  // color:  #40d9ac;
+  font-size: 1rem;
+  margin: 5px;
+  // border: 1px solid rgb(64, 217, 172);
+  padding: 3px;
+//  transition: .3s;
+  
+}
+
+.header-button {
+  // color:  #40d9ac;
+  font-size: 1rem;
+  margin: 5px;
+  // border: 1px solid rgb(64, 217, 172);
+  padding: 3px;
+//  transition: .3s;
+  
 }
 

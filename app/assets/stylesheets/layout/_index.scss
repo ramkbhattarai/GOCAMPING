@@ -214,3 +214,26 @@ div > h3 {
     background-size: cover;
     box-sizing: border-box;
 }
+
+.gocamping-logo{
+    
+    font-family: $font-family;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    // padding: 10px 0px 10px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @include medium {
+        // padding: 10px 0px 10px 0px;
+        font-size: 1.8rem;
+    }
+
+    @include small {
+        font-size: 1.4rem;
+        // padding-left: 15px;    
+    }
+}

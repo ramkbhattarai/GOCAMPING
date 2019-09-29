@@ -1,0 +1,110 @@
+.host_option_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.host_spot_options {
+    border: 1px solid #000;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    margin: 10%;
+    padding: 10%;
+
+    img {
+        border: 1px solid #000;
+    }
+}
+
+.active_button{
+    display: block;
+    border: 1px solid #000;
+    background: $primary-color;
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+    padding: 10%;
+}
+
+.form_signup_button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: .9rem;
+    color: #fff;
+    background-color: $primary-color;
+    border: 2px solid #fff;
+    font-weight: 600;
+
+    &:hover {
+        border: 2px solid $primary-color;
+        background-color: #fff;
+        color: $primary-color;
+        transition: background-color 0.3s ease 0s, border-color 0.4s ease 0s, color 0.4s ease 0s;
+    }
+
+    @include large {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: .9rem;
+        color: #fff;
+        background-color: $primary-color;
+        border: 2px solid #fff;
+        font-weight: 600;
+    }
+
+    @include medium {
+        font-size: .8rem;
+    }
+}
+
+.host_options_title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-group-options {
+    width: 33%;
+
+    @include medium {
+        width: 33%;
+    }
+}
+
+.form_signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#check_in {
+    font-family: $font-family;
+}
+
+#check_out {
+    font-family: $font-family;
+}
+
+.host_form_errors {
+    margin-bottom: 5%;
+    font-size: .8rem;
+
+    p {
+        padding: 1px 0;
+    }
+}

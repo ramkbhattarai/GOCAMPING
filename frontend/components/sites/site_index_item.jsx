@@ -16,15 +16,15 @@ class SiteIndexItem extends Component {
        
         const defaultPhoto = ['https://www.welcomenepal.com/uploads/homeslider/far-west-nepal-the-great-himalaya-trails.jpeg'];
 
-        if (!this.props.site.photos) {
+        if (!this.props.site.photoUrls) {
             
-            this.props.site.photos = defaultPhoto;
+            this.props.site.photoUrls = defaultPhoto;
         }
             
         return (
             <div className="spot_index_item" id={`site-${this.props.site.id}`} onClick={this.handleClick}>
                 <Link className="spot_index_item_link" to={`/sites/${this.props.site.id}`}>
-                    <img className="spot_index_photo" src={this.props.site.photos[0].url} alt="" />
+                    <img className="spot_index_photo" src={this.props.site.photoUrls[0]} alt="" />
                     <div className="spot_details">
                         <div className="spot_details_title">
                             {this.props.site.title}

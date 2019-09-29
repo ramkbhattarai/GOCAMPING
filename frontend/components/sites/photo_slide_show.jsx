@@ -11,8 +11,8 @@ class PhotoSlideShow extends Component {
     render() {
         let photos = ["https://media.glampinghub.com/CACHE/images/accommodations/lakefront-log-cabin-rental-set-in-forestry-of-adirondack-park-new-1544021446318/c5e52bb1535628282aec8e7192952620.jpg"];
 
-        if (this.props.photos) {
-            photos = this.props.photos;
+        if (this.props.site.photoUrls) {
+            photos = this.props.site.photoUrls;
         }
         
         const settings = {
@@ -37,16 +37,16 @@ class PhotoSlideShow extends Component {
             ]
         };
         
-       let photoUrls = [];
-       photos.forEach(photo => {
-           photoUrls.push(photo.url)
-       })
+    //    let photoUrls = [];
+    //    photos.forEach(photo => {
+    //        photoUrls.push(photo.url)
+    //    })
 
         return (
             <section className="spot_photo">
                 <Slider {...settings}>
                     
-                        {
+                        {/* {
                         photoUrls.map((photoUrl, id) => {
                             return (
                                 <div key={id}>
@@ -54,7 +54,17 @@ class PhotoSlideShow extends Component {
                                 </div>
                             )
                         })
-                        }
+                        } */}
+
+                    {
+                        photos.map((photo, id) => {
+                            return (
+                                <div key={id}>
+                                    <img src={photo} alt="" />
+                                </div>
+                            )
+                        })
+                    }
                     
                 </Slider>
             </section>

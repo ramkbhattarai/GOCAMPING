@@ -5,7 +5,9 @@ export default (state = [], action) => {
     Object.freeze(state);
     if (action.type === RECEIVE_REVIEW_ERRORS) {
         return action.errors;
-    } else {
+    } else if (action.type === RECEIVE_REVIEW){
+        return [];
+    }else{
         return state;
     }
 }

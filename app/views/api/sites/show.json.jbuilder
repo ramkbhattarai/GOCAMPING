@@ -1,9 +1,1 @@
-
-  json.partial! 'api/sites/site', site: @site  
-
-
-
-
-
-
-
+json.partial! 'api/sites/site', site: @site  

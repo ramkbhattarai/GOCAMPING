@@ -19,8 +19,9 @@ class Site extends React.Component {
     handleDelete(e) {
         e.preventDefault();
 
-        this.props.deleteSite(this.props.match.params.siteId)
-        
+        this.props.deleteSite(this.props.match.params.siteId).then(() => {
+            this.props.history.push('/sites');
+        });
     }
 
     handleClick(e) {
@@ -35,6 +36,7 @@ class Site extends React.Component {
 
 
     render() {
+        // debugger
        
         const { site } = this.props;
         if ( Object.values(site).length === 0) {
@@ -46,7 +48,7 @@ class Site extends React.Component {
                 <>
                     <main className="spot_main_section">
                         <div className="photo_slider">
-                            <PhotoSlideShow photos={site.photos}/>
+                            <PhotoSlideShow site={site}/>
                         </div>
 
                         <div className="spot_page">
@@ -65,7 +67,7 @@ class Site extends React.Component {
                                 <div className="spot_div">
                                     <div className="hosted_container">
                                         <nobr className="hosted_by_title">Hosted By</nobr><br />
-                                        <nobr className="host_name">{site.host.fname + " " + site.host.lname[0] + "."}</nobr>
+                                        <nobr className="host_name">{site.user.fname + " " + site.user.lname[0] + "."}</nobr>
                                     </div>
                                     <p className="spot_body">{site.body}</p>
                                 </div>

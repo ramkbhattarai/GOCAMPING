@@ -15,19 +15,19 @@ class Api::SitesController < ApplicationController
     end
 
     def show
-        @site = Site.find(params[:id])
+        @site = Site.with_attached_photos.find(params[:id])
         render :show 
     end
 
     def destroy 
         @site = Site.find(params[:id])
-        @site.destroy 
+        @site.destroy
         render :show
     end
 
     private
     def site_params
-        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :wifi, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, :image_url)
+        params.require(:site).permit(:title, :body, :host_id, :cost, :lat, :log, :campfire, :toilet, :shower_room, :guest_num, :tent, :parking, :biking, :pet_allow, :hiking, :wildlife, :rafting, :spots, photos:[])
     end
 
     def bounds
