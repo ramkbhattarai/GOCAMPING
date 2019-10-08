@@ -107,7 +107,7 @@ class Index extends React.Component {
                                     <img src="https://www.cityshor.com/uploads/article/12_2014/1417409544_906374_554771084562521_1158281277_o.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Snow capped Mountain Camping</h3>
+                                    <h3 className="splash_section_name">Snow capped Mountain</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
@@ -119,7 +119,7 @@ class Index extends React.Component {
                                     <img src="http://www.adventurepolygon.com/wp-content/uploads/2018/01/Camping-Near-Rara-Lake-Nepal-Tourist-Places-in-Nepal.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Enveloped within the arms of nature</h3>
+                                    <h3 className="splash_section_name">Enveloped in nature</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                 </div>
@@ -131,7 +131,7 @@ class Index extends React.Component {
                                     <img src="https://nepalecoadventure.com/wp-content/uploads/2015/05/Rara-Lake-Trekking-V.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Mountain is calling</h3>
+                                    <h3 className="splash_section_name">Mountain calling</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
@@ -179,7 +179,7 @@ class Index extends React.Component {
                                     <img src="http://www.excitingnepalholidays.com/images/panchase-trek.jpg" alt="" />
                                 </div>
                                 <div className="splash_section_details">
-                                    <h3 className="splash_section_name">Refreshing filed in the lap of mountains</h3>
+                                    <h3 className="splash_section_name">Refreshing mountains</h3>
                                     <div className="splash_section_location">
                                         Nepal
                                     </div>
