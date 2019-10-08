@@ -23,9 +23,7 @@ class MarkerManager {
     }
 
     createMarker(site) {
-        // const lat = parseFloat(site.lat);
-        // const log = parseFloat(site.log);
-        // const myLatLng = { lat, log };
+        
         const markerInfoWindow = new google.maps.InfoWindow({
             content:
                 `<div class="infowindow">

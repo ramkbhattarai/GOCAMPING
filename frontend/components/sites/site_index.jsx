@@ -24,14 +24,14 @@ class SiteIndex extends Component {
       
         const { sites, filters } = this.props;
         const filteredSites = applyFilters(filters, sites);
-        const siteItems = filteredSites.map((site) => (
-            <SiteIndexItem
-                push={this.props.history.push}
-                site={site}
-                key={site.id}
-                user={this.props.user}
-            />
-        ));
+        // const siteItems = filteredSites.map((site) => (
+        //     <SiteIndexItem
+        //         push={this.props.history.push}
+        //         site={site}
+        //         key={site.id}
+        //         user={this.props.user}
+        //     />
+        // ));
         if (filteredSites.length === 0) {
             return (
                 <div className="spot_index">
@@ -43,10 +43,14 @@ class SiteIndex extends Component {
         } else {
             return (
                 <div className="spot_index">
-                    <ul>
-
-                    {siteItems}
-                    </ul>
+                    {filteredSites.map((site) => (
+                        <SiteIndexItem
+                            push={this.props.history.push}
+                            site={site}
+                            key={site.id}
+                            user={this.props.user}
+                        />
+                    ))}
                 </div>
             )
         }
