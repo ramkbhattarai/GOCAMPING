@@ -53,7 +53,7 @@ user4 = User.create!(
 site1 = Site.create!(
     "host_id": user1.id,
     "title": "Camp near by mountains",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Want to feel alive!! go near the mountains.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -75,7 +75,7 @@ site1 = Site.create!(
 site2 = Site.create!(
     "host_id": user2.id,
     "title": "Oh thy! Majestic Mountains",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Be with royal guardian of universe.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -97,7 +97,7 @@ site2 = Site.create!(
 site3 = Site.create!(
     "host_id": user3.id,
     "title": "Snow capped Mountain camping",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "As tall as mountains and as pristine as them.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -118,8 +118,8 @@ site3 = Site.create!(
 )
 site4 = Site.create!(
     "host_id": user4.id,
-    "title": "Enveloped within the arms of nature",
-    "body": "mountains are calling you. They want you to be there.",
+    "title": "Enveloped in nature",
+    "body": "Get lost inside the mystical and magical force of nature.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -142,7 +142,7 @@ site4 = Site.create!(
 site5 = Site.create!(
     "host_id": user1.id,
     "title": "Mountain calling",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Mountains are calling you. They want you to be there.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -164,7 +164,7 @@ site5 = Site.create!(
 site6 = Site.create!(
     "host_id": user2.id,
     "title": "Go back to nature",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Nature is the only place where imagination meets creativity.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -186,7 +186,7 @@ site6 = Site.create!(
 site7 = Site.create!(
     "host_id": user3.id,
     "title": "Open hills",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Hills are open for you. Be there and feel the presence.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -208,7 +208,7 @@ site7 = Site.create!(
 site8 = Site.create!(
     "host_id": user4.id,
     "title": "Mountains in Sight",
-    "body": "mountains are calling you. They want you to be there.",
+    "body": "Feel humbled with mountains.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
@@ -229,8 +229,8 @@ site8 = Site.create!(
 )
 site9 = Site.create!(
     "host_id": user1.id,
-    "title": "Refreshing filed in the lap of mountains",
-    "body": "mountains are calling you. They want you to be there.",
+    "title": "Refreshing mountains",
+    "body": "Be Near the refreshing mountains.",
     "cost": 100,
     "pet_allow": true,
     "guest_num": 4,
