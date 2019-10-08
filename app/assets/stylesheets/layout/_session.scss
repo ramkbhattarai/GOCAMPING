@@ -86,11 +86,6 @@ body {
 
 }
 
-.header-name {
-  font-family: $font-family;
-  font-size: $font-size;
-  font-weight: normal;
-}
 
 .header-name:hover {
   border-bottom: 2px solid #40d9ac;
@@ -327,12 +322,14 @@ body {
 }
 
 .header-name {
-  // color:  #40d9ac;
+ 
   font-size: 1rem;
   margin: 5px;
-  // border: 1px solid rgb(64, 217, 172);
+ 
   padding: 3px;
-//  transition: .3s;
+
+  font-size: 1rem;
+  font-weight: normal;
   
 }
 
