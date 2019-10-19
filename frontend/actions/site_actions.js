@@ -5,6 +5,14 @@ export const CREATE_SITE = "CREATE_SITE";
 export const DESTROY_SITE = "DESTROY_SITE";
 export const RECEIVE_SITE_ERRORS = "RECEIVE_SITE_ERRORS";
 
+
+export const saveMarkers = (markers) => {
+    return {
+        type: 'asdfsaf',
+        markers
+    }
+}
+
 export const receiveSites = sites => {
     return(
         {

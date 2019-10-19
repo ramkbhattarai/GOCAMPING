@@ -50,8 +50,10 @@ class MarkerManager {
             siteId: site.id,
             clicked: false,
             icon: icon,
-            infoWindow: markerInfoWindow
+            infoWindow: markerInfoWindow,
         })
+
+        this.openInfo = marker.infoWindow.open.bind(this)
 
         this.markers[marker.siteId] = marker;
 
@@ -62,7 +64,7 @@ class MarkerManager {
         });
 
         marker.addListener('mouseover', () => {
-            marker.infoWindow.open(this.map, marker);
+            marker.infoWindow.open(null, marker);
         });
 
         marker.addListener('mouseout', () => {

@@ -14,7 +14,6 @@ const sitesReducer = (state = _siteDefault, action) => {
             case CREATE_SITE:
                 return merge({}, state, action.site)
             case DESTROY_SITE: {
-                debugger
                 let newstate = merge({}, state);
                 delete newstate[action.siteId]
                 return newstate

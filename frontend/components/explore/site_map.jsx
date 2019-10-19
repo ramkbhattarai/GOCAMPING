@@ -16,18 +16,19 @@ class SiteMap extends Component {
 
     componentDidMount() {
         fetchSites();
-       // debugger
+     
         let mapCenter = { lat: 28.530659, lng: 83.878058 };
         const mapOptions = {
             center: mapCenter,
             zoom: 6
         };
-        //let geoLocation = this.props.geoLocation;
-       // const map = this.refs.map;
+       
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         this.MarkerManager = new MarkerManager(this.map);
         this.MarkerManager.updateMarkers(this.props.sites);
         this.registerListeners();
+        // const mark = this.MarkerManager.markers[siteId];
+        // google.maps.event.trigger(mark, 'mouseover')
     }
 
     registerListeners() {
@@ -66,6 +67,11 @@ class SiteMap extends Component {
         });
     }
 
+    showInfo(siteId) {
+        const mark = this.MarkerManager.markers[siteId];
+        google. maps.event.trigger(mark, 'mouseover');
+    }
+
     centerMap(callBack) {
         this.geoCoder.geocode({ 'address': this.props.geoLocation }, (results, status) => {
             if (status === "OK") {
@@ -85,6 +91,8 @@ class SiteMap extends Component {
     componentDidUpdate() {
         const filteredSites = applyFilters(this.props.filters, this.props.sites)
         this.MarkerManager.updateMarkers(filteredSites);
+        window.markers = this.MarkerManager.markers;
+        // put markers into new reducer
         if (this.props.geoLocation.length > 0) this.centerMapOnSearch();
     }
 
